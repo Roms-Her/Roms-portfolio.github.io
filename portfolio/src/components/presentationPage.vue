@@ -3,7 +3,7 @@
 
 <section class="presentation-page--skills">
     <div class="presentation-page--skills__hard">
-        <p class="presentation-page--skills__title presentation-page--skills__title--HS">Hard skills</p>
+        <h2 class="presentation-page--skills__title presentation-page--skills__title--HS">Hard skills</h2>
         <ul class="presentation-page--skills__liste" >
             <li class="presentation-page--skills__list--name li--HS" >
                 <i><svg class="skills--svg" width="800px" height="800px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@
     </div>
 
     <div class="presentation-page--skills__soft">
-        <p class="presentation-page--skills__title presentation-page--skills__title--SS">Soft skills</p>
+        <h2 class="presentation-page--skills__title presentation-page--skills__title--SS">Soft skills</h2>
         <ul class="presentation-page--skills__liste" >
 
             <li class="presentation-page--skills__list--name li--SS" >
@@ -302,18 +302,19 @@
 
 </style>
 
+
 <script>
     export default {
-        name : 'presentation-page',
-        mounted(){
-            // Gestion Arrows scrollY 100vh
+        name: 'presentation-page',
+        mounted() {
             const arrows = document.querySelectorAll(".black-arrow");
 
             arrows.forEach(arrow => arrow.addEventListener("click", (event) => {
-                const fullHeight = document.documentElement.scrollHeight;
- 
+                const windowHeight = window.innerHeight;
+                const scrollTop = window.scrollY;
+
                 window.scrollTo({
-                    top: fullHeight,
+                    top: scrollTop + windowHeight, // Faites défiler de la hauteur de la fenêtre actuelle
                     behavior: 'smooth'
                 });
             }));

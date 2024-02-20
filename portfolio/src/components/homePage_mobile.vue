@@ -22,14 +22,14 @@
     <div class="black-line line-x"></div>
     <div class="black-line line-y"></div>
     <div  class="DWWM">
-        <p class="name">Hello i'm Roms</p>
+        <p class="name">Hi ! i'm Roms</p>
         <div class="welcome"><p>Welcome</p><p>to my</p><p>portfolio</p></div>
     </div>
     <div class="social">
         <ul class="social__list">
-            <li class="social__list--li" ><a class="social__list--li--a" href="">github</a></li>
-            <li class="social__list--li" ><a class="social__list--li--a" href="">linkdin</a></li>
-            <li class="social__list--li" ><a class="social__list--li--a" href="">twitter x</a></li>
+            <li class="social__list--li" ><a class="social__list--li--a" href="https://github.com/Roms-Her" target="blank">github</a></li>
+            <li class="social__list--li" ><a class="social__list--li--a" href="https://www.linkedin.com/in/romain-hernandez-romsher/" target="blank">linkdin</a></li>
+            <li class="social__list--li" ><a class="social__list--li--a" href="https://twitter.com/dev_roms" target="blank">twitter x</a></li>
         </ul>
     </div>
 </div>

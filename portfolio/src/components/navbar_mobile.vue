@@ -149,5 +149,4 @@ color: var(--customs-accessible-text);
         }
     }
 
-    
 </script>
