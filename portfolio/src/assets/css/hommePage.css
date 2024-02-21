@@ -98,7 +98,7 @@
     padding: .6rem 1.5rem;
     background-color: var(--customs-accessible-text);
     border-radius: 100px;
-    color: var(--customs-blue-contrast-text-color-on-light-back);
+    color: var(--customs-interactive-components);
     text-transform: uppercase;
     /* font-size: .6em; */
     font-weight: bold;
