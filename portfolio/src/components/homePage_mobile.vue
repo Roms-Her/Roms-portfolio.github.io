@@ -27,9 +27,11 @@
     </div>
     <div class="social">
         <ul class="social__list">
-            <li class="social__list--li" ><a class="social__list--li--a" href="https://github.com/Roms-Her" target="blank">github</a></li>
-            <li class="social__list--li" ><a class="social__list--li--a" href="https://www.linkedin.com/in/romain-hernandez-romsher/" target="blank">linkdin</a></li>
-            <li class="social__list--li" ><a class="social__list--li--a" href="https://twitter.com/dev_roms" target="blank">twitter x</a></li>
+
+            <li v-for="(item, index) in homeLinks" :key="index" class="social__list--li">
+                <a :href="generateLink(item)" class="social__list--li--a" target="blank">{{ item }}</a>
+            </li>
+
         </ul>
     </div>
 </div>
@@ -51,197 +53,28 @@
 </template>
 
 
-<style>
-
-.home-page__first-coat {
-    position: relative;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.home-page__green-back {
-    display: none;
-}
-
-.home-page__green-back-small-windows {
-    display: flex;
-    rotate: 90deg;
-}
-/* ------ Deuxième couche -------- */
-
-.home-page__second-coat {
-    position: absolute;
-    background-color: transparent;
-    display: flex;
-    top: 0;
-    left: 0;
-}
-
-.black-line {
-    display: flex;
-    background-color: var(--customs-accessible-text);
-    width: .15rem;
-}
-
-.line-y {
-    position:absolute;
-    box-shadow:0px 0px 31px 13px rgba(214,225,255,0.5);
-    top: 25%;
-    height: 50%;
-    left: 28%;
-    animation: animateLineY 1.2s ease-in-out;
-}
-
-.line-x {
-    position: absolute;
-    box-shadow:0px 0px 31px 13px rgba(214,225,255,0.5);
-    top: 45%;
-    left: 15%;
-    width: 67%;
-    height: 0.15rem;
-    animation: animateLineX 1.2s ease-in-out;
-}
-
-.DWWM {
-    position: absolute;
-    max-width: 50%;
-    top: 29%;
-    left: 35%;
-    text-transform: uppercase;
-    font-weight: 600;
-    opacity: 0;
-    line-height: 1.2em;
-    visibility: hidden;
-    animation: animateDWWMandSOCIAL 1.2s 1.2s ease-in-out forwards;
-}
-
-.name {
-    /* font-size: .6em; */
-    font-weight: 400;
-}
-
-.welcome p{
-    line-height: 1em;
-    font-size: 2em;
-}
-
-/* ---- Social ----- */
-
-.social__list {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: .5em;
-    top: 49%;
-    left: 35%;
-    opacity: 0;
-    visibility: hidden;
-    animation: animateDWWMandSOCIAL 1.2s 1.2s ease-in-out forwards;
-}
-
-.social__list--li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social__list--li--a {
-    padding: .6rem 1.5rem;
-    background-color: var(--customs-accessible-text);
-    border-radius: 100px;
-    color: var(--customs-blue-contrast-text-color-on-light-back);
-    text-transform: uppercase;
-    /* font-size: .6em; */
-    font-weight: bold;
-    letter-spacing: .2rem;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-@keyframes animateLineX {
-    0% {
-        transform: translateX(-150%);
-
-    }
-    80% {
-        transform: translateY(20%);
-
-    }
-    100% {
-        transform: translateX(0);
-}}
-
-@keyframes animateLineY {
-    0% {
-        transform: translateY(-150%) rotate(360deg);
-
-    }
-    80% {
-        transform: translateY(20%);
-
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes animateDWWMandSOCIAL {
-    0% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateX(-100%);
-    }
-    80% {
-        opacity: 1;
-        visibility: visible;
-        transform: translateX(20%);
-    }
-    100% {
-        opacity:1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-}
- /* ------ Troisième couche --------  */
-
-.home-page__third-coat {
-    position: absolute;
-    background-color: transparent;
-    padding: 2em;
-    display: flex;
-    /* align-items: flex-end; */
-    bottom: 0;
-    right: 0;
-    gap: 2em;
-}
-
-.home-page__text--group {
-   text-align: end;
-   text-transform: uppercase;
-   line-height: 1.2;
-}
-
-/*  -------- INTERACTIONS --------- */
-
-.social__list--li--a:hover {
-    background-color: var(--customs-interactive-components);
-    color: var(--customs-blue-contrast-text-color-on-dark-back);
-    transition: .2s;
-}
-
-</style>
-
-
 <script>
-
-    export default {
-        name : "hommePage"
-    }
-
+export default {
+    data() {
+        return {
+            homeLinks: [
+                "github",
+                "linkedin",
+                "twitter"
+            ],
+            socialLinks: {
+                github: 'https://github.com/Roms-Her',
+                linkedin: 'https://www.linkedin.com/in/romain-hernandez-romsher',
+                twitter: 'https://twitter.com/dev_roms'
+            }
+        };
+    },
+    methods: {
+        generateLink(item) {
+            const lowerCaseItem = item.toLowerCase();
+            return this.socialLinks[lowerCaseItem] || '/';
+        }
+    },
+    name: "homePage"
+}
 </script>

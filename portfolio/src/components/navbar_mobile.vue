@@ -12,10 +12,15 @@
 
 
                 <div class="navbar__liens">
+                    
                     <ul class="navbar__liens__list">
-                        <li class="navbar__liens__list--puce"><a href="/" class="navbar__liens__list--puce--a"><span class="astuce-Fred">Home</span></a></li>
-                        <li class="navbar__liens__list--puce"><a href="/" class="navbar__liens__list--puce--a"><span class="astuce-Fred">Contact</span></a></li>
+                        <li v-for="(item, index) in navLinks" :key="index" class="navbar__liens__list--puce">
+                            <a href="" class="navbar__liens__list--puce--a">
+                                <span>{{ item }}</span>
+                            </a>
+                        </li>
                     </ul>
+
                     <svg class="black-arrow-hamburger" xmlns="http://www.w3.org/2000/svg" width="30" height="70" viewBox="0 0 30 109" fill="none">
                         <path d="M15 53.5052L17 53.5052L15 53.5052ZM13.5858 107.654C14.3668 108.435 15.6332 108.435 16.4142 107.654L29.1421 94.9264C29.9232 94.1453 29.9232 92.879 29.1421 92.098C28.3611 91.3169 27.0948 91.3169 26.3137 92.098L15 103.412L3.68629 92.098C2.90524 91.3169 1.63891 91.3169 0.857865 92.098C0.0768164 92.879 0.0768163 94.1453 0.857865 94.9264L13.5858 107.654ZM13 0.770325L13 53.5052L17 53.5052L17 0.770325L13 0.770325ZM13 53.5052L13 106.24L17 106.24L17 53.5052L13 53.5052Z" fill="#D6E1FF"/>
                     </svg>
@@ -27,115 +32,16 @@
         </header>
 </template>
 
-<style>
-
-.logo:hover {
-    box-shadow: none;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-}
-
-.navbar__liens__list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3em;
-    }
-
-.navbar__liens__list--puce--a {
-    position: relative;
-    background-color: var(--customs-accessible-text);
-    padding: 1rem 3rem;
-        /* font-size: 1em; */
-    border-radius: 100px;
-    color: var(--customs-interactive-components);
-    text-transform: uppercase;
-    z-index: 0;
-}
-
-.navbar__liens__list--puce--a::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background:var(--customs-interactive-components);
-    border-radius: 100px;
-    transition: all 0.4s;
-    z-index: 1;
-}
-
-
-.navbar__liens__list--puce--a:hover::before {
-    width: 100%; 
-}
-.astuce-Fred {
-    color: var(--customs-interactive-components);
-    z-index: 2;
-    position: relative;
-    transition: 0.4s;
-}
-
-.navbar__liens__list--puce--a:hover .astuce-Fred {
-color: var(--customs-accessible-text);
-}
-
-.navbar .menu-hamburger {
-    display: block;
-    position: absolute;
-    width: 2em;
-    right: 1.5rem;
-    z-index: 1000;
-    height: 100%;
-    transition: .6s ease;
-}
-
-.logo {
-    z-index: 1001;
-}
-.menu-hamburger-rotate {
-    rotate: 90deg;
-}
-.navbar__liens {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--customs-solid-color);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -100vh;
-    transition: all 0.6s ease;
-    z-index: 1000;
-}
-
-.mobile-menu {
-        margin-top: 0;
-    }
-
-.black-arrow-hamburger{
-    display: flex;
-    position: absolute;
-    z-index: 1000;
-    rotate: 180deg;
-    bottom: 1.5em;
-}
-
-</style>
-
 <script>
     export default {
+        data(){
+            return {
+                navLinks: [
+                    "Home",
+                    "Contact"
+                ],
+            }
+        },
         name : 'navbar',
         mounted(){
             // Menu  hamberger

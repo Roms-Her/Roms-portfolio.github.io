@@ -1,0 +1,166 @@
+    /* repartition 60/40 */
+    .presentation-page {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 8rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .black-arrow{
+            width: .8rem;
+        }
+    
+    .presentation-page--me{
+        width: 100%;
+    }
+    
+    /* ------------- */
+    
+    
+    .presentation-page__first-coat{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+    
+    /* section presentation-page--skills */
+    .presentation-page--skills{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem;
+        justify-content: space-around;
+        gap: 3rem;
+    }
+    
+    .presentation-page--skills__hard, .presentation-page--skills__soft {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .presentation-page--skills__title {
+        font-size: 1.5em;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--customs-solid-color);
+        text-shadow: 0px 0px 10px rgba(62,99,221,0.6);
+    }
+    
+        .presentation-page--skills__title--SS {
+            text-align: start;
+        }
+    
+        .presentation-page--skills__title--HS {
+            text-align: end;
+        }
+    
+    
+        .li--SS {
+            justify-content: flex-start;
+        }
+        .li--HS {
+            justify-content: end;
+            flex-direction: row-reverse;
+        }
+    
+    
+    .presentation-page--skills__liste {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .skills--svg {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+    
+    .presentation-page--skills__list--name {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    /* -------------- */
+    /* section presentation-page--me */
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .job {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        justify-content: center;
+        /* padding: 3em 0 3em 3em; */
+        gap: .8em;
+        width: 60%;
+        height: 100%;
+    }
+    
+    .school {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        width: 100%;
+    
+        justify-content: flex-end;
+    }
+    
+    .school-div{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    
+    .job__designation {
+        font-size: 1.5em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .text-facultatif {
+            display: none;
+        }
+    
+    .presentation-page__second-coat {
+        position: absolute;
+        top: 0;
+    }
+    
+    /* .profile-back__color {
+        width: 10em;
+        height: 10em;
+        background-color:var(--customs-solid-color);
+        background-image: url("../images/roms.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 50%;
+        box-shadow: 0px 0px 33px 3px rgba(62,99,221,0.8);
+        visibility:hidden;
+    } */
+    
+    @keyframes animateImg {
+        0% {
+            transform: translateX(200%) rotate(360deg);
+    
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }

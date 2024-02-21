@@ -18,57 +18,7 @@
 </template>
 
 <style>
-    .project-page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        
-    }
-
-    .carousel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        height: 50%;
-        margin-top: 5rem;
-        gap: 2rem;
-    }
-    .carousel-box {
-        display: flex;
-        background-image: url('https://4kwallpapers.com/images/wallpapers/neon-lights-3d-3440x1440-12485.jpg');
-        background-size: cover;
-        position: relative;
-        height: 100%;
-        width:100% ;
-        border-radius: 2em;
-        box-shadow: 0px 0px 33px 3px rgba(68, 98, 248, 0.8);
-    }
-    .carousel-box img {
-        width: 100%;
-        border-radius: 2em;
-    }
-
-    .carousel-box--swipe {
-        position: absolute;
-        /* background-image: url('https://4kwallpapers.com/images/wallpapers/neon-lights-3d-3440x1440-12485.jpg'); */
-        /* background-color: red; */
-        width: 100%;
-        height: 100%;
-        bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .carousel-swipe {
-        height: 2rem;
-        background-color: white;
-        width: 2rem;
-    }
-
+   
 </style>
 
 <script>
