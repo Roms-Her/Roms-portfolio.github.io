@@ -44,9 +44,21 @@
 }
 
 
+
+.navbar .menu-hamburger {
+    display: block;
+    position: absolute;
+    width: 2em;
+    right: 1.5rem;
+    z-index: 1000;
+    height: 100%;
+    transition: .5s ease;
+}
+
 .navbar__liens__list--puce--a:hover::before {
     width: 100%; 
 }
+
 .astuce-Fred {
     color: var(--customs-interactive-components);
     z-index: 2;
@@ -56,16 +68,6 @@
 
 .navbar__liens__list--puce--a:hover .astuce-Fred {
 color: var(--customs-accessible-text);
-}
-
-.navbar .menu-hamburger {
-    display: block;
-    position: absolute;
-    width: 2em;
-    right: 1.5rem;
-    z-index: 1000;
-    height: 100%;
-    transition: .6s ease;
 }
 
 .logo {
@@ -85,7 +87,7 @@ color: var(--customs-accessible-text);
     justify-content: center;
     align-items: center;
     margin-top: -100vh;
-    transition: all 0.6s ease;
+    transition: all 0.5s ease;
     z-index: 1000;
 }
 

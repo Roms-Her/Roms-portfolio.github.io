@@ -14,6 +14,7 @@
 .home-page__green-back-small-windows {
     display: flex;
     rotate: 90deg;
+    opacity: 0.5;
 }
 /* ------ Deuxième couche -------- */
 

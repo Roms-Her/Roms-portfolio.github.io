@@ -16,7 +16,7 @@
                     <ul class="navbar__liens__list">
                         <li v-for="(item, index) in navLinks" :key="index" class="navbar__liens__list--puce">
                             <a href="" class="navbar__liens__list--puce--a">
-                                <span>{{ item }}</span>
+                                <span class="astuce-Fred">{{ item }}</span>
                             </a>
                         </li>
                     </ul>
