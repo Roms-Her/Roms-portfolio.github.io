@@ -28,10 +28,10 @@
     </div>
 </div>
 
-<div class="home-page__third-coat">
-    <div class="home-page__text--group">
-        <h1 class="home-page__text--title">Let's go!</h1>
-        <p class="home-page__text--subtitle">Swipe down for more information</p>
+<div class="absolute p-8 flex bottom-0 right-0 gap-8 items-center">
+    <div class="text-end uppercase leadin-4">
+        <h1 class="text-3xl">Let's go!</h1>
+        <p>Swipe down for more information</p>
     </div>
 
     <div>

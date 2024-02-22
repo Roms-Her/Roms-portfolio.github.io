@@ -1,7 +1,7 @@
 <template>
     <section class="presentation-page">
 
-<section class="presentation-page--skills">
+<!-- <section class="presentation-page--skills">
     <div class="presentation-page--skills__hard">
         <h2 class="presentation-page--skills__title presentation-page--skills__title--HS">Hard skills</h2>
 
@@ -18,6 +18,18 @@
     </ul>
 
     </div>
+</section> -->
+
+<section>
+
+    <div>
+
+        <h1>Skills</h1>
+        <ul>
+            <li v-for="(item, index) in soft" :key="index" class="">{{ item }}</li>
+        </ul>
+    </div>
+
 </section>
 
 <section class="presentation-page--me">
@@ -58,21 +70,15 @@
     export default {
         data(){
         return {
-            stack: [
+            skills: [
                 "HTML", 
                 "CSS",
                 "JAVASCRIPT",
                 "NODE JS",
-                "SQL"
+                "SQL",
+                "VueJS",
+                "Boutstrap"
             ],
-
-            soft: [
-                "PASSIONE",
-                "SMYLE",
-                "CURIEUX",
-                "PROGRESSION",
-                "ENTRAIDE"
-            ]
         }
     },
         name: 'presentation-page',
