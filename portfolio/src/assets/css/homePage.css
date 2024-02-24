@@ -1,25 +1,28 @@
-.home-page__first-coat {
+/* .home-page__first-coat {
     position: relative;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+.portrait{
+    background-color: var(--customs-solid-color);
+    box-shadow:0px 0px 31px 13px rgba(214,225,255,0.5);
 }
 
-
-.home-page__green-back {
+/* .home-page__green-back {
     display: none;
-}
+} */
 
-.home-page__green-back-small-windows {
+/* .home-page__green-back-small-windows {
     display: flex;
     rotate: 90deg;
     opacity: 0.5;
-}
+} */
 /* ------ Deuxième couche -------- */
 
 .home-page__second-coat {
-    position: absolute;
+    /* position: absolute; */
     background-color: transparent;
     display: flex;
     top: 0;
@@ -32,7 +35,7 @@
     width: .15rem;
 }
 
-.line-y {
+/* .line-y {
     position:absolute;
     box-shadow:0px 0px 31px 13px rgba(214,225,255,0.5);
     top: 25%;
@@ -49,7 +52,8 @@
     width: 67%;
     height: 0.15rem;
     animation: animateLineX 1s ease-in-out;
-}
+} */
+
 
 .DWWM {
     position: absolute;
@@ -76,37 +80,37 @@
 
 /* ---- Social ----- */
 
-.social__list {
+/* .social__list {
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: .5em;
     top: 49%;
-    left: 35%;
-    opacity: 0;
-    visibility: hidden;
-    animation: animateDWWMandSOCIAL 1s 1s ease-in-out forwards;
-}
+    left: 35%; */
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    /* animation: animateDWWMandSOCIAL 1s 1s ease-in-out forwards; */
+/* } */
 
-.social__list--li {
+/* .social__list--li {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .social__list--li--a {
-    padding: .6rem 1.5rem;
+    /* padding: .6rem 1.5rem; */
     background-color: var(--customs-accessible-text);
-    border-radius: 100px;
+    /* border-radius: 100px; */
     color: var(--customs-interactive-components);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     /* font-size: .6em; */
-    font-weight: bold;
-    letter-spacing: .2rem;
+    /* font-weight: bold; */
+    /* letter-spacing: .2rem; */
     font-family: "Rajdhani", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    /* font-weight: 400; */
+    /* font-style: normal; */
 }
 
 
@@ -137,7 +141,7 @@
     }
 }
 
-@keyframes animateDWWMandSOCIAL {
+/* @keyframes animateDWWMandSOCIAL {
     0% {
         opacity: 0;
         visibility: hidden;
@@ -153,7 +157,7 @@
         visibility: visible;
         transform: translateY(0);
     }
-}
+} */
  /* ------ Troisième couche --------  */
 
 .home-page__third-coat {
