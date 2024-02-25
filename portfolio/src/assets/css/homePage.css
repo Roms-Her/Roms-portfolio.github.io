@@ -7,6 +7,8 @@
 } */
 .portrait{
     background-color: var(--customs-solid-color);
+    background-image: url('../../../public/img/roms.png');
+    background-size: cover;
 }
 
 /* .home-page__green-back {

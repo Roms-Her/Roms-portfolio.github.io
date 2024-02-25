@@ -11,8 +11,7 @@
 </div> -->
 
 <div class="flex p-8 flex-col w-full">
-    <div class="shadow flex w-40 h-40 rounded-full justify-center mb-8 portrait m-auto">
-        <img class="rounded-full h-40" src="../../public/img/roms.png" alt="">
+    <div class="portrait shadow flex w-40 h-40 rounded-full justify-center mb-8 m-auto">
     </div>
     <p class="mb-4 text-xl">Hi, i'm Romain Hernandez</p>
     <h1 class="mb-8 leading-none font-bold ">Welcome to my portfolio !</h1>
@@ -20,7 +19,7 @@
     <ul class="flex gap-2 mb-10">
 
         <li v-for="(item, index) in homeLinks" :key="index" class="flex items-center justify-center">
-            <a :href="generateLink(item)" class="social__list--li--a px-4 py-2 rounded-xl uppercase tracking-widest" target="blank">{{ item }}</a>
+            <a :href="generateLink(item)" class="social__list--li--a px-4 py-2 rounded-xl uppercase tracking-widest font-medium" target="blank">{{ item }}</a>
         </li>
 
     </ul>
