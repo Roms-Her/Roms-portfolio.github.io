@@ -7,7 +7,6 @@
 } */
 .portrait{
     background-color: var(--customs-solid-color);
-    box-shadow:0px 0px 31px 13px rgba(214,225,255,0.5);
 }
 
 /* .home-page__green-back {
@@ -21,19 +20,19 @@
 } */
 /* ------ Deuxième couche -------- */
 
-.home-page__second-coat {
-    /* position: absolute; */
+/* .home-page__second-coat {
+    position: absolute;
     background-color: transparent;
     display: flex;
     top: 0;
     left: 0;
-}
+} */
 
-.black-line {
+/* .black-line {
     display: flex;
     background-color: var(--customs-accessible-text);
     width: .15rem;
-}
+} */
 
 /* .line-y {
     position:absolute;
@@ -55,7 +54,7 @@
 } */
 
 
-.DWWM {
+/* .DWWM {
     position: absolute;
     max-width: 50%;
     top: 29%;
@@ -66,17 +65,17 @@
     line-height: 1.2em;
     visibility: hidden;
     animation: animateDWWMandSOCIAL 1s 1s ease-in-out forwards;
-}
+} */
 
-.name {
-    /* font-size: .6em; */
+/* .name {
+    font-size: .6em;
     font-weight: 400;
-}
+} */
 
-.welcome p{
+/* .welcome p{
     line-height: 1em;
     font-size: 2em;
-}
+} */
 
 /* ---- Social ----- */
 
@@ -101,9 +100,9 @@
 
 .social__list--li--a {
     /* padding: .6rem 1.5rem; */
-    background-color: var(--customs-accessible-text);
+    background-color: var(--customs-solid-color);
     /* border-radius: 100px; */
-    color: var(--customs-interactive-components);
+    color: var(--customs-accessible-text);
     /* text-transform: uppercase; */
     /* font-size: .6em; */
     /* font-weight: bold; */
@@ -114,7 +113,7 @@
 }
 
 
-@keyframes animateLineX {
+/* @keyframes animateLineX {
     0% {
         transform: translateX(-150%);
 
@@ -139,7 +138,7 @@
     100% {
         transform: translateY(0);
     }
-}
+} */
 
 /* @keyframes animateDWWMandSOCIAL {
     0% {
@@ -160,12 +159,12 @@
 } */
  /* ------ Troisième couche --------  */
 
-.home-page__third-coat {
+/* .home-page__third-coat {
     position: absolute;
     background-color: transparent;
     padding: 2em;
     display: flex;
-    /* align-items: flex-end; */
+    align-items: flex-end;
     bottom: 0;
     right: 0;
     gap: 2em;
@@ -175,7 +174,7 @@
    text-align: end;
    text-transform: uppercase;
    line-height: 1.2;
-}
+} */
 
 /*  -------- INTERACTIONS --------- */
 

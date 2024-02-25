@@ -1,4 +1,4 @@
-.project-page {
+/* .project-page {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -6,6 +6,9 @@
     justify-content: center;
     height: 100vh;
     
+} */
+.project {
+    border: 1px solid var(--customs-borders-and-separator-color);
 }
 
 .carrousel {

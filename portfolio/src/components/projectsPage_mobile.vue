@@ -1,9 +1,13 @@
 <template>
-     <section class="project-page">
+     <section class="flex flex-col items-center justify-center p-8">
 
-        <h1>Projects</h1>
+        <h2 class="font-bold uppercase">Projects</h2>
         
-        <div class="carrousel">
+        <div class="project w-full p-4 h-50 rounded-3xl">
+
+
+        </div>
+        <!-- <div class="carrousel">
             <swiper-container class="mySwiper" pagination="true" effect="cube" grab-cursor="true" cube-effect-shadow="true"
                 cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
                 <swiper-slide v-for="(item, index) in projectPicture" :key="index">
@@ -12,21 +16,21 @@
                     <p class="project-name">Name - {{ projectName[index] }}</p>
                 </swiper-slide>
             </swiper-container>
-        </div>
+        </div> -->
 
      </section>
 </template>
 
 <style>
 
-swiper-container {
+/* swiper-container {
       width: 15em;
       height: 15em;
       position: absolute;
-      /* left: 50%;
-      top: 50%; */
-      /* margin-left: -150px;
-      margin-top: -150px; */
+      left: 50%;
+      top: 50%;
+      margin-left: -150px;
+      margin-top: -150px;
     }
 
     swiper-slide {
@@ -49,7 +53,7 @@ swiper-container {
     .project-name {
        text-align: end;
        font-weight: 600;
-    }
+    } */
 
 </style>
 

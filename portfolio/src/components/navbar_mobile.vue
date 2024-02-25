@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar flex justify-between p-6 items-center w-full h-full mb-8">
 
                 <a href="/" class="logo-a logo"><svg xmlns="http://www.w3.org/2000/svg" width="110" height="41" viewBox="0 0 211 41" fill="none">
                     <path d="M6.81026 39.5132C0.632202 41.9315 -2.99731 32.1049 3.24914 29.8703C9.4272 27.452 13.0567 37.2786 6.81026 39.5132Z" fill="#D6E1FF"/>
@@ -11,21 +11,21 @@
                 </svg></a>
 
 
-                <div class="navbar__liens">
+                <div class="absolute top-0 left-0 w-full h-dvh flex justify-center items-center navbar__liens">
                     
-                    <ul class="navbar__liens__list">
-                        <li v-for="(item, index) in navLinks" :key="index" class="navbar__liens__list--puce">
+                    <ul class="flex flex-col items-center gap-10">
+                        <li v-for="(item, index) in navLinks" :key="index">
                             <a href="" class="navbar__liens__list--puce--a">
                                 <span class="astuce-Fred">{{ item }}</span>
                             </a>
                         </li>
                     </ul>
 
-                    <svg class="black-arrow-hamburger" xmlns="http://www.w3.org/2000/svg" width="30" height="70" viewBox="0 0 30 109" fill="none">
+                    <svg class="flex absolute z-1000 rotate-180 bottom-10" xmlns="http://www.w3.org/2000/svg" width="30" height="70" viewBox="0 0 30 109" fill="none">
                         <path d="M15 53.5052L17 53.5052L15 53.5052ZM13.5858 107.654C14.3668 108.435 15.6332 108.435 16.4142 107.654L29.1421 94.9264C29.9232 94.1453 29.9232 92.879 29.1421 92.098C28.3611 91.3169 27.0948 91.3169 26.3137 92.098L15 103.412L3.68629 92.098C2.90524 91.3169 1.63891 91.3169 0.857865 92.098C0.0768164 92.879 0.0768163 94.1453 0.857865 94.9264L13.5858 107.654ZM13 0.770325L13 53.5052L17 53.5052L17 0.770325L13 0.770325ZM13 53.5052L13 106.24L17 106.24L17 53.5052L13 53.5052Z" fill="#D6E1FF"/>
                     </svg>
                 </div>
-                <svg class="menu-hamburger" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="menu-hamburger absolute right-6 w-10 h-full " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.5 5.5L3.11612 6.11612C3.68206 6.68206 4.44964 7 5.25 7C6.05036 7 6.81794 6.68206 7.38388 6.11612L7.61612 5.88388C8.18206 5.31794 8.94964 5 9.75 5C10.5504 5 11.3179 5.31794 11.8839 5.88388L12.1161 6.11612C12.6821 6.68206 13.4496 7 14.25 7C15.0504 7 15.8179 6.68206 16.3839 6.11612L16.6161 5.88388C17.1821 5.31794 17.9496 5 18.75 5C19.5504 5 20.3179 5.31794 20.8839 5.88388L21.5 6.5M2.5 11.5L3.11612 12.1161C3.68206 12.6821 4.44964 13 5.25 13C6.05036 13 6.81794 12.6821 7.38388 12.1161L7.61612 11.8839C8.18206 11.3179 8.94964 11 9.75 11C10.5504 11 11.3179 11.3179 11.8839 11.8839L12.1161 12.1161C12.6821 12.6821 13.4496 13 14.25 13C15.0504 13 15.8179 12.6821 16.3839 12.1161L16.6161 11.8839C17.1821 11.3179 17.9496 11 18.75 11C19.5504 11 20.3179 11.3179 20.8839 11.8839L21.5 12.5M2.5 17.5L3.11612 18.1161C3.68206 18.6821 4.44964 19 5.25 19C6.05036 19 6.81794 18.6821 7.38388 18.1161L7.61612 17.8839C8.18206 17.3179 8.94964 17 9.75 17C10.5504 17 11.3179 17.3179 11.8839 17.8839L12.1161 18.1161C12.6821 18.6821 13.4496 19 14.25 19C15.0504 19 15.8179 18.6821 16.3839 18.1161L16.6161 17.8839C17.1821 17.3179 17.9496 17 18.75 17C19.5504 17 20.3179 17.3179 20.8839 17.8839L21.5 18.5" stroke="#D6E1FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </nav>

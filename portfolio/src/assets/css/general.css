@@ -41,7 +41,9 @@ a:hover {
     box-shadow:0px 0px 30px 1px rgba(214,225,255,0.5) ;
     transition: .5s;
 }
-
+.shadow {
+    box-shadow:0px 0px 20px 5px rgba(85, 87, 151, 0.5);
+}
 .home-page, .presentation-page {
     height: 100vh;
     display: flex;
