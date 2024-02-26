@@ -39,16 +39,20 @@ p {
 }
 
 a:hover {
-    box-shadow:0px 0px 30px 1px rgba(214,225,255,0.5) ;
+    box-shadow:var(--customs-shadow-box);
     transition: .5s;
 }
 .shadow {
-    box-shadow:0px 0px 20px 5px rgba(85, 87, 151, 0.5);
+    box-shadow:var(--customs-shadow-box);
 }
 .home-page, .presentation-page {
     height: 100vh;
     display: flex;
     align-items: center;
+}
+
+.more-title {
+    
 }
 
 .container-coat {

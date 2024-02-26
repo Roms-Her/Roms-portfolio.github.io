@@ -19,7 +19,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background:var(--customs-interactive-components);
+    background:var(--customs-solid-color);
     border-radius: 100px;
     transition: all 0.4s;
     z-index: 1;

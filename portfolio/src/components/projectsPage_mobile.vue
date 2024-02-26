@@ -1,12 +1,12 @@
 <template>
-    <section v-motion-pop-visible class="flex flex-col items-center justify-center p-8">
-        <!-- <h2 class="font-bold uppercase mb-8">Projects</h2> -->
+    <section id="project-page" v-motion-pop-visible class="flex flex-col items-center justify-center p-8">
 
         <div className="carousel carousel-center w-full space-x-4 rounded-box">
 
             <div className="carousel-item gap-4">
 
-                <div v-for="(project, index) in projects" :key="index" class="card w-72 bg-base-100 shadow-xl text-[#253974]">
+                <div v-for="(project, index) in projects" :key="index"
+                    class="card w-72 bg-base-100 shadow-xl text-[#253974]">
                     <figure class="h-28">
                         <img :src="project.picture" :alt="project.name" class="rounded-xl w-full cover" />
                     </figure>
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
         </div>
@@ -31,7 +31,7 @@
 export default {
     data() {
         return {
-            isVisible: true, // Contrôle de la visibilité de la section
+            isVisible: true,
             projects: [
                 {
                     name: "Nicoles",

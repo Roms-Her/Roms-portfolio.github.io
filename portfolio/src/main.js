@@ -9,6 +9,7 @@ import './assets/css/navbar.css'
 import './assets/css/homePage.css'
 import './assets/css/presentationPage.css'
 import './assets/css/projectsPage.css'
+import './assets/css/moreInformations.css'
 
 const app = createApp(App)
 
