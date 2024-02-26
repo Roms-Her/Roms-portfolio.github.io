@@ -2,8 +2,8 @@
 
   <navbar />
   <home-page />
-  <presentation-page />
   <project-page />
+  <presentation-page />
   
 </template>
 

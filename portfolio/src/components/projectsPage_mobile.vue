@@ -1,94 +1,64 @@
 <template>
-     <section class="flex flex-col items-center justify-center p-8">
+    <section v-motion-pop-visible class="flex flex-col items-center justify-center p-8">
+        <!-- <h2 class="font-bold uppercase mb-8">Projects</h2> -->
 
-        <h2 class="font-bold uppercase">Projects</h2>
-        
-        <div class="project w-full p-4 h-50 rounded-3xl">
+        <div className="carousel carousel-center w-full space-x-4 rounded-box">
 
+            <div className="carousel-item gap-4">
+
+                <div v-for="(project, index) in projects" :key="index" class="card w-72 bg-base-100 shadow-xl text-[#253974]">
+                    <figure class="h-28">
+                        <img :src="project.picture" :alt="project.name" class="rounded-xl w-full cover" />
+                    </figure>
+                    <div class="card-body items-center text-center bg-[#d6e1ff]">
+                        <h2 class="card-title">{{ project.name }}</h2>
+                        <p>{{ project.technos }}</p>
+                        <div class="card-actions">
+                            <a :href="project.link" class="btn btn-primary bg-[#0090FF] text-[#d6e1ff]">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
 
         </div>
-        <!-- <div class="carrousel">
-            <swiper-container class="mySwiper" pagination="true" effect="cube" grab-cursor="true" cube-effect-shadow="true"
-                cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
-                <swiper-slide v-for="(item, index) in projectPicture" :key="index">
-                    <p>Techno: {{ projectTechnos[index] }}</p>
-                    <a :href="projectLink[index]"><img :src="projectPicture[index]" /></a>
-                    <p class="project-name">Name - {{ projectName[index] }}</p>
-                </swiper-slide>
-            </swiper-container>
-        </div> -->
-
-     </section>
+    </section>
 </template>
 
-<style>
-
-/* swiper-container {
-      width: 15em;
-      height: 15em;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      margin-left: -150px;
-      margin-top: -150px;
-    }
-
-    swiper-slide {
-      background-position: center;
-      background-size: cover;
-    }
-
-    swiper-slide a img {
-      display: block;
-      width: 100%;
-    }
-
-    swiper-slide a {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        margin: 1rem 0 1rem;
-    }
-
-    .project-name {
-       text-align: end;
-       font-weight: 600;
-    } */
-
-</style>
+<style></style>
 
 <script>
-    export default {
-        data(){
-            return {
-                projectPicture: [
-                "https://cdn.pixabay.com/photo/2023/08/16/18/05/homes-8194751_1280.png",
-                "https://cdn.pixabay.com/photo/2022/04/15/21/52/digital-graphics-7135248_1280.jpg",
-                "https://cdn.pixabay.com/photo/2020/05/19/13/48/cartoon-5190942_1280.jpg",
-                "https://cdn.pixabay.com/photo/2022/03/31/14/53/camp-7103189_1280.png",
-                ],
-
-                projectLink: [
-                "https://cdn.pixabay.com/photo/2023/08/16/18/05/homes-8194751_1280.png",
-                "https://cdn.pixabay.com/photo/2022/04/15/21/52/digital-graphics-7135248_1280.jpg",
-                "https://cdn.pixabay.com/photo/2020/05/19/13/48/cartoon-5190942_1280.jpg",
-                "https://cdn.pixabay.com/photo/2022/03/31/14/53/camp-7103189_1280.png",
-                ],
-
-                projectName: [
-                    "Nicoles",
-                    "Ocolis",
-                    "O'news",
-                    "JPB photographie"
-                ],
-
-                projectTechnos: [
-                    "Vue JS, SwiperJS",
-                    "Node JS, Sequilize, Express",
-                    "React, Bulma",
-                    "Docker, Sequelize, Node JS"
-                ]
-            }
-        }
-    }
+export default {
+    data() {
+        return {
+            isVisible: true, // Contrôle de la visibilité de la section
+            projects: [
+                {
+                    name: "Nicoles",
+                    picture: "https://cdn.pixabay.com/photo/2023/08/16/18/05/homes-8194751_1280.png",
+                    technos: "Vue JS, SwiperJS",
+                    link: "lien1"
+                },
+                {
+                    name: "Ocolis",
+                    picture: "https://cdn.pixabay.com/photo/2022/04/15/21/52/digital-graphics-7135248_1280.jpg",
+                    technos: "Node JS, Sequilize, Express",
+                    link: "lien2"
+                },
+                {
+                    name: "O'news",
+                    picture: "https://cdn.pixabay.com/photo/2020/05/19/13/48/cartoon-5190942_1280.jpg",
+                    technos: "React, Bulma",
+                    link: "lien3"
+                },
+                {
+                    name: "JPB photographie",
+                    picture: "https://cdn.pixabay.com/photo/2022/03/31/14/53/camp-7103189_1280.png",
+                    technos: "Docker, Sequelize, Node JS",
+                    link: "lien4"
+                }
+            ]
+        };
+    },
+};
 </script>
