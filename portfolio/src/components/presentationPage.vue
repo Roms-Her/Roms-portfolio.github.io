@@ -1,7 +1,7 @@
 <template>
-    <section id="skills" class="flex flex-col p-8">
+    <section id="skills" class="flex flex-col p-8 sm:items-center">
 
-        <div v-motion-pop-visible class="project skills flex flex-col w-full rounded-3xl p-4 items-center ">
+        <div v-motion-pop-visible class="project skills flex flex-col w-full rounded-3xl p-4 items-center sm:w-5/6">
 
             <h2 class="font-bold mb-6 uppercase">Skills</h2>
 

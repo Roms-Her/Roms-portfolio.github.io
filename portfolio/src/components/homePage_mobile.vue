@@ -1,26 +1,29 @@
 <template>
-    <section class="flex flex-col">
+    <section class="flex flex-col sm:items-center ">
 
-        <div v-motion-slide-visible-once-left class="flex p-8 flex-col w-full">
-            <div class="portrait shadow flex w-40 h-40 rounded-full justify-center mb-8 m-auto">
+        <div v-motion-slide-visible-once-left class="flex p-8 flex-col w-full sm:w-5/6 md:flex-row-reverse md:mb-10 ">
+            <div class="portrait shadow flex w-56 h-56 rounded-full justify-center mb-8 m-auto md:m-auto">
             </div>
-            <p class="mb-4 text-xl">Hi, i'm Romain Hernandez</p>
-            <h1 class="mb-8 leading-none font-bold ">Welcome to my portfolio !</h1>
-            <p class="mb-6 text-xl ">Full stack java script developer. Creative and passionate.</p>
-            <ul class="flex gap-2 mb-10 flex-wrap">
+            <div class="md:pr-8">
 
-                <li v-for="(item, index) in homeLinks" :key="index" class="flex items-center justify-center">
-                    <a :href="generateLink(item)"
-                        class="social__list--li--a px-4 py-2 rounded-xl uppercase tracking-widest font-medium"
-                        target="blank">{{ item }}</a>
-                </li>
+                <p class="mb-4 text-xl md:text-2xl md:mb-8">Hi, i'm Romain Hernandez</p>
+                <h1 class="mb-8 leading-none max-w-xl font-bold  md:text-4xl md:mb-10">Welcome to my portfolio !</h1>
+                <p class="mb-6 text-xl md:text-2xl md:mb-8">Full stack java script developer. Creative and passionate.</p>
+                <ul class="flex gap-2 flex-wrap md:gap-4">
 
-            </ul>
+                    <li v-for="(item, index) in homeLinks" :key="index" class="flex items-center justify-center">
+                        <a :href="generateLink(item)"
+                            class="social__list--li--a px-6 py-3 rounded-xl uppercase tracking-widest font-medium"
+                            target="blank">{{ item }}</a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-        <div class=" flex bottom-0 right-0 gap-8 items-center justify-end p-8">
+        <div class="flex bottom-0 right-0 gap-8 items-center justify-end p-8 sm:w-5/6 md:mb-10">
             <div class="text-end uppercase leadin-4">
-                <p class="text-3xl">Let's go!</p>
-                <p>Swipe down for more information</p>
+                <p class="text-3xl md:text-4xl">Let's go!</p>
+                <p class="md:text-xl">Swipe down for more information</p>
             </div>
 
             <div>

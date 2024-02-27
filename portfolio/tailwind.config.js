@@ -14,9 +14,19 @@ export default {
       fontSize: {
         sm: "0.8em",
         base: "1em0",
+        base2: "1.1em",
         xl: "1.2em",
         '2xl': "1.5em",
-        '3xl': "2em"
+        '3xl': "2em",
+        '4xl': "3em"
+      },
+
+      screens: {
+        'sm': '640px',
+        'md': '800px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
       }
     },
   },

@@ -1,20 +1,20 @@
 <template>
-    <section id="project-page" v-motion-pop-visible class="flex flex-col items-center justify-center p-8">
+    <section id="project-page" v-motion-pop-visible class="flex flex-col items-center justify-center p-8 md:mb-10">
 
-        <div className="carousel carousel-center w-full space-x-4 rounded-box">
+        <div className="carousel carousel-center w-full space-x-4 rounded-box sm:w-5/6">
 
-            <div className="carousel-item gap-4">
+            <div className="carousel-item gap-4 md:gap-6">
 
                 <div v-for="(project, index) in projects" :key="index"
                     class="card w-72 bg-base-100 shadow-xl text-[#253974]">
-                    <figure class="h-28">
+                    <figure class="h-28 md:h-44">
                         <img :src="project.picture" :alt="project.name" class="rounded-xl w-full cover" />
                     </figure>
-                    <div class="card-body items-center text-center bg-[#d6e1ff]">
-                        <h2 class="card-title">{{ project.name }}</h2>
-                        <p>{{ project.technos }}</p>
+                    <div class="card-body items-center text-center bg-[#d6e1ff] md:h-56">
+                        <h2 class="card-title md:text-xl">{{ project.name }}</h2>
+                        <p class="md:text-base2">{{ project.technos }}</p>
                         <div class="card-actions">
-                            <a :href="project.link" class="btn btn-primary bg-[#0090FF] text-[#d6e1ff]">En savoir plus</a>
+                            <a :href="project.link" class="btn btn-primary bg-[#0090FF] text-[#d6e1ff] md:text-xl">En savoir plus</a>
                         </div>
                     </div>
                 </div>

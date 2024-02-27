@@ -45,20 +45,6 @@ a:hover {
 .shadow {
     box-shadow:var(--customs-shadow-box);
 }
-.home-page, .presentation-page {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.more-title {
-    
-}
-
-.container-coat {
-    width: 100%;
-    height: 100%;
-}
 
 .black-arrow {
     width: 1.5em;
