@@ -32,10 +32,10 @@
 
         <div class="absolute top-0 left-0 w-full h-dvh flex justify-center items-center navbar__liens">
 
-            <ul class="flex flex-col items-center gap-10">
-                <li v-for="(item, index) in navLinks" :key="index">
-                    <a :href="item.url" class="navbar__liens__list--puce--a">
-                        <span class="astuce-Fred">{{ item.title }}</span>
+            <ul class="flex flex-col items-center gap-8">
+                <li v-for="(item, index) in navLinks" :key="index" class="bg-accessible w-full py-3 px-10 text-center rounded-3xl">
+                    <a :href="item.url" class="">
+                        <span class="text-components">{{ item.title }}</span>
                     </a>
                 </li>
             </ul>
