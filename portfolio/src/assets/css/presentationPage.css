@@ -2,3 +2,7 @@
     background-color: var(--customs-accessible-text);
     color: var(--customs-interactive-components);
 }
+
+.skills-cards {
+    background: var(--customs-background-gradient);
+}

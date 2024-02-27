@@ -18,7 +18,9 @@ export default {
         xl: "1.2em",
         '2xl': "1.5em",
         '3xl': "2em",
-        '4xl': "3em"
+        '35xl': "2.5em",
+        '4xl': "3em",
+        max: "5em"
       },
 
       screens: {
@@ -27,6 +29,8 @@ export default {
         'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px',
+        'ms': {'max': '1280px'},
+        'small': {'max': '640px'}
       }
     },
   },

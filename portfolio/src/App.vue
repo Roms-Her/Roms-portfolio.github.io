@@ -1,6 +1,6 @@
 <template>
 
-  <header>
+  <header class="flex justify-center">
     <navbar />
   </header>
 

@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar flex justify-between p-6 items-center w-full h-full mb-8">
+    <nav class="navbar flex justify-between p-6 items-center w-full h-full mb-8 sm:w-5/6 sm:pt-10 xl:w-3/4 xl:mb-20">
 
         <a href="/" class="logo-a logo"><svg xmlns="http://www.w3.org/2000/svg" width="110" height="41" viewBox="0 0 211 41"
                 fill="none">
@@ -20,6 +20,15 @@
                     fill="#D6E1FF" />
             </svg></a>
 
+        <div class="ms:hidden">
+            <ul class="flex items-center gap-6 ">
+                <li v-for="(item, index) in navLinks" :key="index">
+                    <a :href="item.url" class="hover:bg-none hover:shadow-none uppercase hover:text-solid">
+                        <span class="">{{ item.title }}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
         <div class="absolute top-0 left-0 w-full h-dvh flex justify-center items-center navbar__liens">
 
@@ -38,7 +47,7 @@
                     fill="#D6E1FF" />
             </svg>
         </div>
-        <svg class="menu-hamburger absolute right-6 w-10 h-full " width="800px" height="800px" viewBox="0 0 24 24"
+        <svg class="menu-hamburger right-6 w-10 h-10 xl:hidden" width="800px" height="800px" viewBox="0 0 24 24"
             fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M2.5 5.5L3.11612 6.11612C3.68206 6.68206 4.44964 7 5.25 7C6.05036 7 6.81794 6.68206 7.38388 6.11612L7.61612 5.88388C8.18206 5.31794 8.94964 5 9.75 5C10.5504 5 11.3179 5.31794 11.8839 5.88388L12.1161 6.11612C12.6821 6.68206 13.4496 7 14.25 7C15.0504 7 15.8179 6.68206 16.3839 6.11612L16.6161 5.88388C17.1821 5.31794 17.9496 5 18.75 5C19.5504 5 20.3179 5.31794 20.8839 5.88388L21.5 6.5M2.5 11.5L3.11612 12.1161C3.68206 12.6821 4.44964 13 5.25 13C6.05036 13 6.81794 12.6821 7.38388 12.1161L7.61612 11.8839C8.18206 11.3179 8.94964 11 9.75 11C10.5504 11 11.3179 11.3179 11.8839 11.8839L12.1161 12.1161C12.6821 12.6821 13.4496 13 14.25 13C15.0504 13 15.8179 12.6821 16.3839 12.1161L16.6161 11.8839C17.1821 11.3179 17.9496 11 18.75 11C19.5504 11 20.3179 11.3179 20.8839 11.8839L21.5 12.5M2.5 17.5L3.11612 18.1161C3.68206 18.6821 4.44964 19 5.25 19C6.05036 19 6.81794 18.6821 7.38388 18.1161L7.61612 17.8839C8.18206 17.3179 8.94964 17 9.75 17C10.5504 17 11.3179 17.3179 11.8839 17.8839L12.1161 18.1161C12.6821 18.6821 13.4496 19 14.25 19C15.0504 19 15.8179 18.6821 16.3839 18.1161L16.6161 17.8839C17.1821 17.3179 17.9496 17 18.75 17C19.5504 17 20.3179 17.3179 20.8839 17.8839L21.5 18.5"
@@ -57,16 +66,16 @@ export default {
                     url: "/"
                 },
                 {
-                    title: "Contact",
-                    url: "mailto:romsher.dev@gmail.com"
-                },
-                {
                     title: "Projects",
                     url: "#project-page"
                 },
                 {
                     title: "Skills",
                     url: "#skills"
+                },
+                {
+                    title: "Contact",
+                    url: "mailto:romsher.dev@gmail.com"
                 },
                 {
                     title: "About",
