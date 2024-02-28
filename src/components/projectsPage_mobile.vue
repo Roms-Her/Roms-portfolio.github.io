@@ -41,15 +41,15 @@
 
 
 
-    <div class="flex flex-wrap gap-6 sm:w-5/6 xl:w-3/4 justify-center small:flex-col small:w-full">
+    <div class="flex flex-wrap gap-6 sm:w-5/6 xl:w-3/4 2xl:w-3/5 justify-center small:flex-col small:w-full">
 
         <div v-motion-pop-visible v-for="(project, index) in projects" :key="index" class="card w-2/5 max-h-80 text-[#253974] small:w-full">
           <div class="card-body items-center text-center bg-[#d6e1ff] md:h-56 rounded-3xl">
-            <h2  class="card-title md:text-xl">{{ project.name }}</h2>
-            <p class="md:text-base2">{{ project.technos }}</p>
+            <h2  class="card-title md:text-xl uppercase">{{ project.name }}</h2>
+            <p class="md:text-base">{{ project.technos }}</p>
             <div class="card-actions">
               <a :href="project.link"
-                class="btn btn-primary bg-[#0090FF] text-[#d6e1ff] md:text-xl hover:bg-separator">En savoir plus</a>
+                class="btn btn-primary bg-[#0090FF] text-[#d6e1ff] md:text-base2 hover:bg-separator">En savoir plus</a>
             </div>
           </div>
           <div></div>

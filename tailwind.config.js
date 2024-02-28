@@ -17,10 +17,10 @@ export default {
         base2: "1.1em",
         xl: "1.2em",
         '2xl': "1.5em",
-        '3xl': "2em",
-        '35xl': "2.5em",
-        '4xl': "3em",
-        max: "5em"
+        '3xl': "1.8em",
+        '35xl': "2em",
+        '4xl': "2.5em",
+        max: "3em"
       },
 
       screens: {

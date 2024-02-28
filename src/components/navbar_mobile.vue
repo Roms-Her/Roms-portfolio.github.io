@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar flex justify-between p-6 items-center w-full h-full mb-8 sm:w-5/6 sm:pt-10 xl:w-3/4 xl:mb-20">
+    <nav class="navbar flex justify-between p-6 items-center w-full h-full mb-8 sm:w-5/6 sm:pt-10 xl:w-3/4 2xl:w-3/5 xl:mb-20">
 
         <a href="/" class="logo-a logo"><svg xmlns="http://www.w3.org/2000/svg" width="110" height="41" viewBox="0 0 211 41"
                 fill="none">
@@ -23,7 +23,7 @@
         <div class="ms:hidden">
             <ul class="flex items-center gap-6 ">
                 <li v-for="(item, index) in navLinks" :key="index">
-                    <a :href="item.url" class="hover:bg-none hover:shadow-none uppercase hover:text-solid">
+                    <a :href="item.url" class="hover:bg-none hover:shadow-none uppercase hover:text-solid text-sm">
                         <span class="">{{ item.title }}</span>
                     </a>
                 </li>

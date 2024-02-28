@@ -1,6 +1,6 @@
 <template>
 
-  <div class="footer footer-center p-8 bg-solid text-accessible gap-4">
+  <div class="footer footer-center 2xl:w-2/5 sm:w-2/4 lg:w-2/4 m-auto p-10 bg-none text-accessible gap-4 border-t-2 border-solid">
     <aside>
       <h3 class="font-bold mb-4 md:text-35xl">Thanks for your time !</h3>
       <p class="font-bold">
