@@ -46,6 +46,10 @@ a:hover {
     box-shadow:var(--customs-shadow-box);
 }
 
+.shadow-modal {
+    box-shadow:var(--customs-shadow-modal);
+}
+
 .black-arrow {
     width: 1.5em;
     animation: arrowMouv 2.5s infinite; /* Répète l'animation indéfiniment */
