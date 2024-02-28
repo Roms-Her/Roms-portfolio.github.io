@@ -1,5 +1,5 @@
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/Portfolio-Vue/Roms-portfolio.github.io/'
+    ? '/Roms-portfolio.github.io/'
     : '/'
 }
