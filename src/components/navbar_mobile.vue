@@ -21,9 +21,9 @@
             </svg></a>
 
         <div class="ms:hidden">
-            <ul class="flex items-center gap-6 ">
+            <ul class="flex items-center gap-2 ">
                 <li v-for="(item, index) in navLinks" :key="index">
-                    <a :href="item.url" class="hover:bg-none hover:shadow-none uppercase hover:text-solid text-sm">
+                    <a :href="item.url" class="hover:bg-none hover:shadow-none uppercase hover:text-solid text-sm p-4">
                         <span class="">{{ item.title }}</span>
                     </a>
                 </li>
@@ -40,7 +40,7 @@
                 </li>
             </ul>
 
-            <svg class="flex absolute z-1000 rotate-180 bottom-10" xmlns="http://www.w3.org/2000/svg" width="30" height="70"
+            <svg id="arrow-pop" class=" flex absolute z-1000 rotate-180 bottom-10" xmlns="http://www.w3.org/2000/svg" width="30" height="70"
                 viewBox="0 0 30 109" fill="none">
                 <path
                     d="M15 53.5052L17 53.5052L15 53.5052ZM13.5858 107.654C14.3668 108.435 15.6332 108.435 16.4142 107.654L29.1421 94.9264C29.9232 94.1453 29.9232 92.879 29.1421 92.098C28.3611 91.3169 27.0948 91.3169 26.3137 92.098L15 103.412L3.68629 92.098C2.90524 91.3169 1.63891 91.3169 0.857865 92.098C0.0768164 92.879 0.0768163 94.1453 0.857865 94.9264L13.5858 107.654ZM13 0.770325L13 53.5052L17 53.5052L17 0.770325L13 0.770325ZM13 53.5052L13 106.24L17 106.24L17 53.5052L13 53.5052Z"
@@ -86,14 +86,27 @@ export default {
     },
     name: 'navbar',
     mounted() {
-        // Menu  hamberger
-        const menuHamburger = document.querySelector(".menu-hamburger");
-        const navLinks = document.querySelector(".navbar__liens");
+const menuHamburger = document.querySelector(".menu-hamburger");
+const navLinks = document.querySelector(".navbar__liens");
+const arrow = document.querySelector("#arrow-pop");
 
-        menuHamburger.addEventListener('click', () => {
-            menuHamburger.classList.toggle("menu-hamburger-rotate");
-            navLinks.classList.toggle('mobile-menu');
-        })
+function fermerPopUp() {
+    menuHamburger.classList.remove("menu-hamburger-rotate");
+    navLinks.classList.remove('mobile-menu');
+}
+
+menuHamburger.addEventListener('click', () => {
+    menuHamburger.classList.toggle("menu-hamburger-rotate");
+    navLinks.classList.toggle('mobile-menu');
+});
+
+arrow.addEventListener('click', () => {
+    fermerPopUp();
+});
+
+window.addEventListener('scroll', () => {
+    fermerPopUp();
+});
     }
 }
 

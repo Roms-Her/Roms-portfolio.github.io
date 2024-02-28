@@ -8,7 +8,8 @@ export default {
         components: "#253974",
         separator: "#3A4F97",
         solid: "#0090FF",
-        accessible: "#d6e1ff"
+        accessible: "#d6e1ff",
+        card: "#222f70"
       },
 
       fontSize: {

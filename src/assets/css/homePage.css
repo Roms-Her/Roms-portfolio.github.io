@@ -1,5 +1,5 @@
 .portrait{
-    background-color: var(--customs-solid-color);
+    /* background-color: #3A4F97; */
     background-image: url('../../../public/img/roms.png');
     background-size: cover;
     border: 1px solid var(--customs-accessible-text);

@@ -3,7 +3,7 @@
 
         <div v-motion-slide-visible-once-left class="flex p-8 flex-col w-full sm:w-5/6  md:mb-10 lg:flex-row-reverse lg:mb-14 xl:w-3/4 2xl:w-3/5">
             <!-- md:flex-row-reverse -->
-            <div class="portrait shadow flex w-40 h-40 rounded-full justify-center mb-8 m-auto md:mb-12 lg:m-auto lg:w-60 lg:h-60 xl:w-64 xl:h-64 ">
+            <div class="portrait shadow flex w-40 h-40 bg-card bg-opacity-70 rounded-full justify-center mb-8 m-auto md:mb-12 lg:m-auto lg:w-60 lg:h-60 xl:w-64 xl:h-64 ">
             </div>
             <div class="md:pr-8">
 
@@ -48,7 +48,7 @@ export default {
             homeLinks: [
                 "github",
                 "linkedin",
-                "twitter",
+                "twitter X",
                 "romsher.dev@gmail.com"
             ],
             socialLinks: {
