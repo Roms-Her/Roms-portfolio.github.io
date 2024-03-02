@@ -19,9 +19,9 @@
 
     <div id="modal" v-if="modalVisible"
       class="absolute z-50 flex flex-col h-5/6 w-5/6 bg-accessible items-center rounded-3xl border border-solid text-backgroundColor shadow-modal">
-      <span @click="closeModal" class="absolute text-35xl top-4 right-6 cursor-pointer text-white text-lg">&times;</span>
+      <span @click="closeModal" class="absolute flex justify-center text-35xl w-10 top-4 right-4 cursor-pointer text-white text-3xl">&times;</span>
       <figure class="w-full h-2/4 flex rounded-3xl">
-        <img class="flex w-full rounded-t-3xl"
+        <img class="flex w-full rounded-t-3xl object-cover"
           :src="selectedProject.picture" alt="" />
       </figure>
       <div class="flex flex-col items-center p-8 overflow-y-auto">
