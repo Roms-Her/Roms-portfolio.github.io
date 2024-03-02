@@ -24,8 +24,8 @@
         <img class="flex w-full rounded-t-3xl object-cover"
           :src="selectedProject.picture" alt="" />
       </figure>
-      <div class="flex flex-col items-center p-8 overflow-y-auto">
-        <div class="flex flex-col">
+      <div class="flex flex-col items-center p-8 overflow-y-auto h-full justify-center">
+        <div class="flex flex-col sm:w-3/4">
           <h3 class="text-center mb-4 font-bold">{{ selectedProject.name }}</h3>
           <p class="text-center mb-4 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quasi
