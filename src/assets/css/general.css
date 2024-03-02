@@ -38,10 +38,10 @@ p {
     font-size: 1rem;
 }
 
-a:hover {
+/* a:hover {
     box-shadow:var(--customs-shadow-box);
     transition: .5s;
-}
+} */
 .shadow {
     box-shadow:var(--customs-shadow-box);
 }

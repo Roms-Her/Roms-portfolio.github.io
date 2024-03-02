@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar flex justify-between p-6 items-center w-full h-full mb-8 sm:w-5/6 sm:pt-10 xl:w-3/4 2xl:w-3/5 xl:mb-20">
 
-        <a href="/" class="logo-a logo"><svg xmlns="http://www.w3.org/2000/svg" width="110" height="41" viewBox="0 0 211 41"
+        <a href="" class="logo-a logo"><svg xmlns="http://www.w3.org/2000/svg" width="110" height="41" viewBox="0 0 211 41"
                 fill="none">
                 <path
                     d="M6.81026 39.5132C0.632202 41.9315 -2.99731 32.1049 3.24914 29.8703C9.4272 27.452 13.0567 37.2786 6.81026 39.5132Z"
@@ -63,7 +63,7 @@ export default {
             navLinks: [
                 {
                     title: "Home",
-                    url: "/"
+                    url: ""
                 },
                 {
                     title: "Projects",

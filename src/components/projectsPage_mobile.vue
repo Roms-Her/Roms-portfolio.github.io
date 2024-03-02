@@ -8,7 +8,7 @@
           <p class="md:text-base">{{ project.technos }}</p>
           <div class="card-actions">
             <button @click="openModal(project)"
-              class="btn btn-primary bg-[#0090FF] text-[#d6e1ff] md:text-base2 hover:bg-separator">
+              class="social-a py-2 px-4 text-base rounded-xl border border-solid  md:text-base2 font-bold">
               En savoir plus
             </button>
           </div>

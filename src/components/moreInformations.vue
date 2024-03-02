@@ -13,13 +13,17 @@
         websites as well as full-featured, dynamic applications, putting my knowledge into practice and
         demonstrating my ability to create innovative development solutions.</p>
 
-      <p class="text-center sm:w-5/6 md:text-base2">So I'm <span class="important">determined</span> to
+      <p class="text-center sm:w-5/6 md:text-base2 mb-10">So I'm <span class="important">determined</span> to
         pursue my path in development by exploring new technologies, taking part in ambitious projects
         and engaging in continuing education initiatives. My goal is to <span class="important">become a
           web and mobile web developer of excellence</span>, capable of providing innovative and
         effective solutions to the complex challenges of the digital world.</p>
+
+        <a class="social-a px-6 py-3 bg-solid border rounded-xl" href="../../public/img/cv_romain-hernandez.pdf"
+            download="cv_romain-hernandez.pdf">Download CV</a>
     </div>
 
+    
 
   </section>
 </template>

@@ -14,7 +14,7 @@
 
                     <li v-for="(item, index) in homeLinks" :key="index" class="flex items-center justify-center">
                         <a :href="generateLink(item)"
-                            class="social__list--li--a px-6 py-3 rounded-xl uppercase tracking-widest font-medium text-sm"
+                            class="social-a px-6 py-3 rounded-xl uppercase tracking-widest font-medium text-sm"
                             target="blank">{{ item }}</a>
                     </li>
 
