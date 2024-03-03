@@ -19,8 +19,7 @@
           web and mobile web developer of excellence</span>, capable of providing innovative and
         effective solutions to the complex challenges of the digital world.</p>
 
-        <a class="social-a px-6 py-3 bg-solid border rounded-xl" href="../../public/img/cv_romain-hernandez.pdf"
-            download="cv_romain-hernandez.pdf">Download CV</a>
+        <a class="social-a px-4 py-2 rounded-xl uppercase font-medium text-sm border border-solid" href="../../public/img/cv_romain-hernandez.pdf">Download CV</a>
     </div>
 
     
