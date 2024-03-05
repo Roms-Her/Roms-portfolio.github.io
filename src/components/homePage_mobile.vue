@@ -7,9 +7,9 @@
             </div>
             <div class="md:pr-8">
 
-                <p class="mb-2 text-base2 md:mb-4">Hi, i'm Romain Hernandez</p>
-                <h1 class="mb-8 leading-none max-w-xl font-bold  md:text-max md:mb-10">Welcome to my portfolio!</h1>
-                <p class="mb-6 text-base2 md:mb-8">Full stack java script developer. Creative and passionate.</p>
+                <p class="mb-2 text-base2 md:mb-4">Bonjour, je suis Romain Hernandez</p>
+                <h1 class="mb-8 leading-none max-w-xl font-bold  md:text-max md:mb-10">Bienvenue sur mon portfolio!</h1>
+                <p class="mb-6 text-base2 md:mb-8">Développeur full stack. Créatif et passionné.</p>
                 <ul class="flex gap-2 flex-wrap md:gap-4 xl:gap-4">
 
                     <li v-for="(item, index) in homeLinks" :key="index" class="flex items-center justify-center">
@@ -23,8 +23,8 @@
         </div>
         <div class="flex bottom-0 right-0 gap-8 items-center justify-end p-8 sm:w-5/6 md:mb-10 lg:mb-14 xl:w-3/4 2xl:w-3/5">
             <div class="text-end uppercase leadin-4">
-                <p class="text-3xl">Let's go!</p>
-                <p class="md:text-base2">Swipe down for more information</p>
+                <p class="text-3xl">Let's go !</p>
+                <p class="md:text-base2">Plus d'information par ici</p>
             </div>
 
             <div>

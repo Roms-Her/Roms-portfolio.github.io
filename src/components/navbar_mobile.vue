@@ -62,11 +62,11 @@ export default {
         return {
             navLinks: [
                 {
-                    title: "Home",
+                    title: "Accueil",
                     url: ""
                 },
                 {
-                    title: "Projects",
+                    title: "Projets",
                     url: "#project-page"
                 },
                 {
