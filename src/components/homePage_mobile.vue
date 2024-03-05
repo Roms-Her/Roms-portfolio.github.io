@@ -48,21 +48,21 @@ export default {
             homeLinks: [
                 "github",
                 "linkedin",
-                "twitter X",
-                "romsher.dev@gmail.com"
+                "twitter",
+                "email"
             ],
             socialLinks: {
                 github: 'https://github.com/Roms-Her',
                 linkedin: 'https://www.linkedin.com/in/romain-hernandez-romsher',
                 twitter: 'https://twitter.com/dev_roms',
-                email:'mailto:romsher.dev@gmail.com'
+                email: 'mailto:romsher.dev@gmail.com'
             }
         };
     },
     methods: {
         generateLink(item) {
             const lowerCaseItem = item.toLowerCase();
-            return this.socialLinks[lowerCaseItem] || '/';
+            return this.socialLinks[lowerCaseItem] || ' ';
         }
     },
     name: "homePage"
