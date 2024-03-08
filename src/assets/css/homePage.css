@@ -13,8 +13,8 @@
 }
 
 .social-a:hover {
-    background-color: var(--customs-interactive-components);
-    color: var(--customs-blue-contrast-text-color-on-dark-back);
+    background-color: var(--customs-accessible-text);
+    color: var(--customs-interactive-components);
     box-shadow:var(--customs-shadow-box);
     transition: .2s;
 }

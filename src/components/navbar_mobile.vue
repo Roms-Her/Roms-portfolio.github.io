@@ -21,7 +21,7 @@
             </svg></a>
 
         <div class="ms:hidden">
-            <ul class="flex items-center gap-2 ">
+            <ul class="flex items-center gap-2 text-base2 ">
                 <li v-for="(item, index) in navLinks" :key="index">
                     <a :href="item.url" class="hover:bg-none hover:shadow-none uppercase hover:text-solid text-sm p-4">
                         <span class="">{{ item.title }}</span>

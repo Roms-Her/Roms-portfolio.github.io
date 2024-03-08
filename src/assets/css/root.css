@@ -1,11 +1,11 @@
 :root {
     --customs-background-color: #141726;
-    --customs-background-gradient:radial-gradient(circle, rgb(13, 21, 32) 20%, #130e62 100%);
+    --customs-background-gradient:linear-gradient(137deg, rgba(34,193,195,1) 0%, rgba(34,195,136,1) 100%);
     --customs-interactive-components: #253974;
     --customs-borders-and-separator-color:#3A4F97;
     --customs-solid-color:#0090FF;
     --customs-accessible-text: #d6e1ff;
     --customs-shadow-box: 0px 0px 20px 5px rgba(85, 87, 151, 0.5);
-    --customs-shadow-modal:0px 0px 36px 40px rgba(20,23,38,0.9);
+    --customs-shadow-modal:0px 0px 30px 30px #1417266d;
     --customs-shadow-text:0px 0px 10px rgba(214,225,255,0.6);
 } 

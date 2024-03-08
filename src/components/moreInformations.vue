@@ -2,7 +2,7 @@
   <section id="about" v-motion-pop-visible class="flex flex-col p-8 mb-8 md:mb-12 lg:mb-14 items-center">
 
     <div class="flex flex-col justify-center items-center sm:w-5/6 xl:w-3/4 2xl:w-3/5">
-      <p class="more-title text-3xl text-center w-3/4 mb-10 sm:w-2/5 md:text-3xl">Je suis un développeur full stack passionné.</p>
+      <p class="more-title text-3xl text-center w-3/4 mb-10 sm:w-2/5 md:text-3xl uppercase">Je suis un développeur full stack passionné.</p>
   
       <p class="mb-8 text-center sm:w-5/6 md:text-base2">Ayant effectué une reconversion professionnelle, j'ai enrichi mes compétences grâce à une formation approfondie dans une grande école du <span class="important">numérique</span>, me spécialisant en tant que développeur <span class="important">web et web mobile</span>. Au cours de cette expérience, j'ai eu l'opportunité de collaborer sur divers projets, ce qui m'a permis d'acquérir une compréhension approfondie des <span class="important">technologies modernes</span>. Mon parcours professionnel m'a conduit à concevoir et développer des sites web ainsi que des applications dynamiques complètes, mettant ainsi en pratique mes connaissances et démontrant ma capacité à créer des solutions de développement innovantes.</p>
 
