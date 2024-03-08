@@ -1,9 +1,10 @@
 <template>
-
-  <header class="flex justify-center">
+  
+  <header class="flex justify-center w-full">
+    <sphere />
     <navbar />
   </header>
-
+  
   <main>
     <home-page />
     <project-page />
@@ -23,6 +24,7 @@
 
 <script setup>
 
+import sphere from './components/sphere.vue';
 import navbar from './components/navbar_mobile.vue';
 import homePage from './components/homePage_mobile.vue';
 import presentationPage from './components/presentationPage.vue';
