@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="sphere" v-for="(sphere, index) in spheres" :key="index">{{ sphere }}</div>
+    <div class="sphere w-2/6 h-2/6" v-for="(sphere, index) in spheres" :key="index">{{ sphere }}</div>
   </div>
 </template>
 
@@ -16,13 +16,11 @@
 }
 
 .sphere {
-  width: 15em;
-  height: 18em;
   background-color: var(--customs-solid-color);
   opacity: 0.1;
   border-radius: 50%;
   position: absolute;
-  transition: all 8s ease; /* Ajout de la transition */
+  transition: all 10s ease; /* Ajout de la transition */
   /* box-shadow: 0px 0px 2px 2px rgba(243, 244, 255, 0.73); */
 }
 </style>
