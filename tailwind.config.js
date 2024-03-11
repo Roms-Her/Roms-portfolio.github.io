@@ -9,7 +9,7 @@ export default {
         separator: "#3A4F97",
         solid: "#0090FF",
         accessible: "#d6e1ff",
-        card: "#222f70"
+        // card: "#222f70"
       },
 
       fontSize: {
