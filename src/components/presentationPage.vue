@@ -5,10 +5,10 @@
 
             <h2 class="font-bold mb-6 uppercase text-accessible md:text-3xl">Hards Skills</h2>
             <div class="flex mb-4 w-full justify-center">
-                <ul class="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-8 lg:w-4/5">
+                <ul class="flex gap-4 md:gap-8 max-w-full flex-wrap justify-center items-center w-full md:gap-8 lg:w-4/5">
                     <li v-for="(item, index) in hardSkills" :key="index" class="uppercase font-semibold md:text-base">
                         <div class="rigolo w-20 h-20 p-4 card-content rounded-3xl">
-                            <a :href="item.doc">
+                            <a :href="item.doc" target="_blank">
                                 <img class=" w-full" :src="item.logo" :alt="item.alt">
                             </a>
                         </div>
@@ -24,10 +24,12 @@
 <h2 class="font-bold mb-6 uppercase text-accessible md:text-3xl">Softs Skills</h2>
 
 <div class="flex mb-4 w-full justify-center">
-    <ul class="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-10 lg:w-4/5">
+    <ul class="flex gap-4 md:gap-8 max-w-full flex-wrap justify-center items-center w-full md:gap-10 lg:w-4/5">
                     <li v-for="(item, index) in softSkills" :key="index" class="uppercase font-semibold md:text-base">
                             <figure class="flex flex-col items-center justify-center gap-4">
-                                <img class="rigolo w-20 h-20 p-4 card-content rounded-3xl" :src="item.logo" :alt="item.alt">
+                                <a :href="item.doc" target="_blank">
+                                    <img class="rigolo w-20 h-20 p-4 card-content rounded-3xl" :src="item.logo" :alt="item.alt">
+                                </a>
                                 <figcaption >{{ item.description }}</figcaption>
                             </figure>
 
@@ -94,11 +96,11 @@ export default {
                 {logo: logoGithub, alt: "logo Github", doc: "https://github.com/"}
             ],
             softSkills: [
-                {logo: logoCofee, alt: "image de tasse a café", description: "Café"},
-                {logo: logoCreatif, alt: "image 'Créatif'", description: "Créatif"},
-                {logo: logoCurieux, alt: "image 'Curiosité'", description: "Curieux"},
-                {logo: logoPassionne, alt: "image 'Passion'", description: "Passionné"},
-                {logo: logoCoworking, alt: "image 'Co-Working'", description: "équipe"}
+                {logo: logoCofee, alt: "image de tasse a café", description: "Café", doc: "https://www.maisonducafe.com/cafes/histoire/"},
+                {logo: logoCreatif, alt: "image 'Créatif'", description: "Créatif", doc: "https://www.bloom-idees.fr/etre-creatif-etre-soi/#:~:text=%C3%8Atre%20cr%C3%A9atif%2C%20%C3%A7a%20veut%20dire,s'adapter%20au%20monde%20environnant."},
+                {logo: logoCurieux, alt: "image 'Curiosité'", description: "Curieux", doc: "https://www.penserchanger.com/7-raisons-detre-curieux/"},
+                {logo: logoPassionne, alt: "image 'Passion'", description: "Passionné", doc: "https://www.radiofrance.fr/franceculture/podcasts/le-pourquoi-du-comment-philo/pourquoi-faut-il-etre-passionne-4305197"},
+                {logo: logoCoworking, alt: "image 'Co-Working'", description: "équipe", doc: "https://asana.com/fr/resources/teamwork-in-the-workplace"}
             ]
         }
     },
