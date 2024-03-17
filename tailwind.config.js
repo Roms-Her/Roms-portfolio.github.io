@@ -8,8 +8,8 @@ export default {
         components: "#253974",
         separator: "#3A4F97",
         solid: "#0090FF",
-        accessible: "#d6e1ff",
-        // card: "#222f70"
+        accessible: "#D6E1FF",
+        backgroundInfo: "#6c22c3b3"
       },
 
       fontSize: {
@@ -32,6 +32,10 @@ export default {
         '2xl': '1536px',
         'ms': {'max': '1280px'},
         'small': {'max': '640px'}
+      },
+      
+      borderRadius: {
+        test: '5rem'
       }
     },
   },

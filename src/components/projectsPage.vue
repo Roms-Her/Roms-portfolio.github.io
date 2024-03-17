@@ -1,9 +1,10 @@
 <template>
   <section id="project-page" class="flex flex-col items-center justify-center p-8 md:mb-10 lg:mb-14">
-    <div id="project-back" class="flex flex-wrap gap-6 sm:w-5/6 xl:w-3/4 2xl:w-3/5 justify-center small:flex-col small:w-full">
+    <div id="project-back"
+      class="flex flex-wrap gap-10 sm:w-5/6 xl:w-3/4 2xl:w-3/5 justify-center small:flex-col small:w-full">
       <div v-motion-pop-visible v-for="(project, index) in projects" :key="index"
-        class="card w-2/5 max-h-80 text-accessible small:w-full backdrop-blur-lg">
-        <div class=" card-body items-center text-center md:h-56 bg-accessible rounded-3xl bg-opacity-20">
+        class="card card-content w-2/5 max-h-80 small:w-full rounded-3xl ">
+        <div class=" card-body items-center text-center md:h-56">
           <h2 class="card-title md:text-xl uppercase">{{ project.name }}</h2>
           <p class="md:text-base">{{ project.technos }}</p>
           <div class="card-actions">
@@ -13,16 +14,15 @@
             </button>
           </div>
         </div>
-        <div></div>
       </div>
     </div>
 
     <div id="modal" v-if="modalVisible"
-      class="absolute z-50 flex flex-col h-5/6 w-5/6 bg-accessible items-center rounded-3xl border border-solid text-backgroundColor shadow-modal">
-      <span @click="closeModal" class="absolute flex justify-center text-35xl w-10 top-4 right-4 cursor-pointer text-white text-3xl">&times;</span>
+      class="absolute z-50 flex flex-col h-5/6 w-5/6 bg-accessible items-center rounded-3xl text-backgroundColor shadow-modal">
+      <span @click="closeModal"
+        class="absolute flex justify-center text-35xl w-10 top-4 right-4 cursor-pointer text-white text-3xl">&times;</span>
       <figure class="w-full h-2/4 flex rounded-3xl">
-        <img class="flex w-full rounded-t-3xl object-cover"
-          :src="selectedProject.picture" alt="" />
+        <img class="flex w-full rounded-t-3xl object-cover" :src="selectedProject.picture" alt="" />
       </figure>
       <div class="flex flex-col items-center p-8 overflow-y-auto h-full justify-center">
         <div class="flex flex-col sm:w-3/4">
@@ -38,7 +38,7 @@
         </div>
         <div class="flex flex-col">
           <h4 class="text-center">Technos utilisées:</h4>
-         <p>{{ selectedProject.technos }}</p>
+          <p>{{ selectedProject.technos }}</p>
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@ export default {
       this.modalVisible = false;
     },
   },
-  mounted(){
+  mounted() {
     const page = document.getElementById('project-page');
 
     window.addEventListener('click', (event) => {

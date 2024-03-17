@@ -61,8 +61,16 @@ p {
 }
 
 .important {
-    color: var(--customs-solid-color);
+    font-weight: bold;
 }
+
+.card-content {
+    border: solid 1px var(--customs-borders-color);
+    backdrop-filter: blur(10px);
+    background-color: rgba(214, 225, 255, 0.1); 
+    box-shadow: var(--customs-shadow-box);
+}
+
 
 @keyframes arrowMouv {
     0% {

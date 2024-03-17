@@ -4,6 +4,7 @@
     background-size: cover;
     border: 1px solid var(--customs-accessible-text);
     box-shadow: var(--customs-shadow-box);
+    backdrop-filter: blur(20px);
 }
 
 .social-a {
