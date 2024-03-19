@@ -2,7 +2,7 @@
   <section id="project-page" class="flex flex-col items-center justify-center p-8 md:mb-10 lg:mb-14">
     <div id="project-back"
       class="flex flex-wrap gap-10 sm:w-5/6 xl:w-3/4 2xl:w-3/5 justify-center small:flex-col small:w-full">
-      <div v-motion-pop-visible v-for="(project, index) in projects" :key="index"
+      <div v-motion-pop-visible-once v-for="(project, index) in projects" :key="index"
         class="card card-content w-2/5 max-h-80 small:w-full rounded-3xl ">
         <div class=" card-body items-center text-center md:h-56">
           <h2 class="card-title md:text-xl uppercase">{{ project.name }}</h2>

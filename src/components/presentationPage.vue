@@ -1,7 +1,7 @@
 <template>
-    <section v-motion-pop-visible id="skills" class="flex flex-col p-8 mb-10 sm:items-center md:mb-24 lg:mb-32 ">
+    <section  id="skills" class="flex flex-col p-8 mb-10 sm:items-center md:mb-24 lg:mb-32 ">
 
-        <div class="card-content flex flex-col w-full rounded-3xl p-4 items-center sm:w-5/6 md:p-8 xl:w-3/4 2xl:w-3/5 mb-10">
+        <div v-motion-slide-visible-once-left class="card-content flex flex-col w-full rounded-3xl p-4 items-center sm:w-5/6 md:p-8 xl:w-3/4 2xl:w-3/5 mb-10">
 
             <h2 class="font-bold mb-6 uppercase text-accessible md:text-3xl">Hards Skills</h2>
             <div class="flex mb-4 w-full justify-center">
@@ -19,7 +19,7 @@
 
         </div>
 
-        <div class="card-content flex flex-col w-full rounded-3xl p-4 items-center sm:w-5/6 md:p-8 xl:w-3/4 2xl:w-3/5">
+        <div v-motion-slide-visible-once-right class="card-content flex flex-col w-full rounded-3xl p-4 items-center sm:w-5/6 md:p-8 xl:w-3/4 2xl:w-3/5">
 
 <h2 class="font-bold mb-6 uppercase text-accessible md:text-3xl">Softs Skills</h2>
 

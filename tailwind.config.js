@@ -8,7 +8,7 @@ export default {
         components: "#253974",
         separator: "#3A4F97",
         solid: "#0090FF",
-        accessible: "#D6E1FF",
+        accessible: "#f1f4fd",
         backgroundInfo: "#6c22c3b3"
       },
 
