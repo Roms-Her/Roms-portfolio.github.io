@@ -1,6 +1,6 @@
 <template>
 
-  <section class="footer relative footer-center w-full m-auto p-10 bg-backgroundInfo/70 text-accessible gap-4">
+  <section class="footer relative footer-center w-full m-auto p-10 text-accessible gap-4">
     <div>
 
       <aside>

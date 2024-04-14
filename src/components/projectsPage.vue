@@ -6,7 +6,7 @@
         class="card card-content w-2/5 max-h-80 small:w-full rounded-3xl ">
         <div class=" card-body items-center text-center md:h-56">
           <h2 class="card-title md:text-xl uppercase">{{ project.name }}</h2>
-          <p class="md:text-base">{{ project.technos }}</p>
+          <p class="md:text-base">{{ project.poste }}</p>
           <div class="card-actions">
             <button @click="openModal(project)"
               class="social-a px-4 py-2 rounded-xl uppercase font-medium text-sm border border-solid">
@@ -28,15 +28,10 @@
         <div class="flex flex-col sm:w-3/4">
           <h3 class="text-center mb-4 font-bold">{{ selectedProject.name }}</h3>
           <p class="text-center mb-4 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quasi
-            illum consequuntur voluptate doloremque sapiente, exercitationem
-            pariatur quo facere quae facilis, fugiat enim magni aut ex nesciunt
-            inventore labore dolorum! Repellat, laboriosam sit. Ipsa rerum iste
-            nobis at quasi ullam corporis eos praesentium enim perspiciatis
-            atque, voluptatem ex dignissimos sunt!
+       {{ selectedProject.text }}
           </p>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col items-center justify-center">
           <h4 class="text-center">Technos utilisées:</h4>
           <p>{{ selectedProject.technos }}</p>
         </div>
@@ -48,6 +43,7 @@
 <style></style>
 
 <script>
+import gestinvest from '../../public/img/Gestinvest.png'
 export default {
   data() {
     return {
@@ -57,32 +53,37 @@ export default {
 
       projects: [
         {
-          name: "Nicoles",
+          name: "Gestinvest",
           picture:
-            "https://cdn.pixabay.com/photo/2017/12/12/11/37/bastei-3014467_640.jpg",
-          technos: "Vue JS, SwiperJS",
+            gestinvest,
+          technos: "React, Node JS, Express, Sqitch, Tailwildcss, Jest, PostgreSQL, Heroku",
+          text: "Gestinvest est une application de gestion de portefeuille d'actifs. Elle permet de suivre l'évolution de ses investissements en temps réel. J'ai travaillé sur ce projet en tant que Product Owner. J'ai pu mettre en pratique mes compétences en développement web et en gestion de projet. Créé pour un projet d'étude, nous étions 5 (2  front, 3 back) et avions un mois composé de 4 sprints en comptant le sprint 0 pour le réaliser.",
+          poste: "Product Owner",
           link: "lien1",
         },
         {
-          name: "Ocolis",
-          picture:
-            "https://cdn.pixabay.com/photo/2016/01/08/18/00/antelope-canyon-1128815_1280.jpg",
-          technos: "Node JS, Sequilize, Express",
-          link: "lien2",
+          name: "Gestinvest",
+          picture: gestinvest,
+          technos: "React, Node JS, Express, Sqitch, Tailwildcss, Jest, PostgreSQL, Heroku",
+          text: "Gestinvest est une application de gestion de portefeuille d'actifs. Elle permet de suivre l'évolution de ses investissements en temps réel. J'ai travaillé sur ce projet en tant que Product Owner. J'ai pu mettre en pratique mes compétences en développement web et en gestion de projet. Créé pour un projet d'étude, nous étions 5 (2  front, 3 back) et avions un mois composé de 4 sprints en comptant le sprint 0 pour le réaliser.",
+          poste: "Product Owner",
+          link: "lien1",
         },
         {
-          name: "O'news",
-          picture:
-            "https://cdn.pixabay.com/photo/2016/04/02/20/54/road-1303617_1280.jpg",
-          technos: "React, Bulma",
-          link: "lien3",
+          name: "Gestinvest",
+          picture: gestinvest,
+          technos: "React, Node JS, Express, Sqitch, Tailwildcss, Jest, PostgreSQL, Heroku",
+          text: "Gestinvest est une application de gestion de portefeuille d'actifs. Elle permet de suivre l'évolution de ses investissements en temps réel. J'ai travaillé sur ce projet en tant que Product Owner. J'ai pu mettre en pratique mes compétences en développement web et en gestion de projet. Créé pour un projet d'étude, nous étions 5 (2  front, 3 back) et avions un mois composé de 4 sprints en comptant le sprint 0 pour le réaliser.",
+          poste: "Product Owner",
+          link: "lien1",
         },
         {
-          name: "JPB photographie",
-          picture:
-            "https://cdn.pixabay.com/photo/2020/03/17/13/04/desert-4940300_1280.jpg",
-          technos: "Docker, Sequelize, Node JS",
-          link: "lien4",
+          name: "Gestinvest",
+          picture: gestinvest,
+          technos: "React, Node JS, Express, Sqitch, Tailwildcss, Jest, PostgreSQL, Heroku",
+          text: "Gestinvest est une application de gestion de portefeuille d'actifs. Elle permet de suivre l'évolution de ses investissements en temps réel. J'ai travaillé sur ce projet en tant que Product Owner. J'ai pu mettre en pratique mes compétences en développement web et en gestion de projet. Créé pour un projet d'étude, nous étions 5 (2  front, 3 back) et avions un mois composé de 4 sprints en comptant le sprint 0 pour le réaliser.",
+          poste: "Product Owner",
+          link: "lien1",
         },
       ],
 

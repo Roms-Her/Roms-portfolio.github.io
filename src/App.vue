@@ -9,11 +9,12 @@
     <home-page />
     <project-page />
     <presentation-page />
-    <more-informations />
+    <time-Line />
+    <more-informations class="bg-backgroundInfo"/>
   </main>
 
   <footer>
-    <footer-vue />
+    <footer-vue class="bg-backgroundInfo"/>
   </footer>
 
 </template>
@@ -29,6 +30,7 @@ import navbar from './components/navbar.vue';
 import homePage from './components/homePage.vue';
 import presentationPage from './components/presentationPage.vue';
 import projectPage from './components/projectsPage.vue';
+import timeLine from './components/timeline.vue';
 import moreInformations from './components/moreInformations.vue';
 import footerVue from './components/footer.vue';
 

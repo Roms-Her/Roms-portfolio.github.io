@@ -1,5 +1,5 @@
 <template>
-  <section id="about" v-motion-pop-visible-once class="relative flex box-information flex-col px-8 pt-24 pb-8 items-center bg-backgroundInfo ">
+  <section id="about" class="relative flex box-information flex-col px-8 pt-24 pb-8 items-center ">
 
     <div class="flex flex-col justify-center items-center sm:w-5/6 xl:w-3/4 2xl:w-3/5">
       <p class=" text-3xl text-center w-3/4 mb-10 sm:w-2/5 md:text-3xl uppercase font-semibold">Développeur full stack passionné.</p>

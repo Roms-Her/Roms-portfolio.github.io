@@ -74,6 +74,10 @@ export default {
                     url: "#skills"
                 },
                 {
+                    title: "Expériences",
+                    url: "#timeline"
+                },
+                {
                     title: "Contact",
                     url: "mailto:romsher.dev@gmail.com"
                 },
