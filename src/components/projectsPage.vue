@@ -27,13 +27,13 @@
       <div class="flex flex-col items-center p-8 overflow-y-auto h-full justify-center">
         <div class="flex flex-col sm:w-3/4">
           <h3 class="text-center mb-4 font-bold">{{ selectedProject.name }}</h3>
-          <p class="text-center mb-4 ">
+          <p class="text-center mb-4">
        {{ selectedProject.text }}
           </p>
         </div>
         <div class="flex flex-col items-center justify-center">
           <h4 class="text-center">Technos utilisées:</h4>
-          <p>{{ selectedProject.technos }}</p>
+          <p class="text-center">{{ selectedProject.technos }}</p>
         </div>
       </div>
     </div>
