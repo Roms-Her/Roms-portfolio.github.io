@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import cv from '../../assets/pdf/romain-hernandez-cv.pdf'
+import cv from '../../assets/pdf/cv-romain-hernandez.pdf'
 export default {
   data() {
     return {
