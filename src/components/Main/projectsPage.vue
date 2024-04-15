@@ -1,5 +1,5 @@
 <template>
-  <section id="project-page" class="flex flex-col items-center justify-center p-8 md:mb-10 lg:mb-14">
+  <section id="project-page" class="flex flex-col items-center justify-center p-8 md:mb-10 lg:mb-14 text-accessible">
     <div id="project-back"
       class="flex flex-wrap gap-10 sm:w-5/6 xl:w-3/4 2xl:w-3/5 justify-center small:flex-col small:w-full">
       <div v-motion-pop-visible-once v-for="(project, index) in projects" :key="index"
@@ -9,7 +9,7 @@
           <p class="md:text-base">{{ project.poste }}</p>
           <div class="card-actions">
             <button @click="openModal(project)"
-              class="social-a px-4 py-2 rounded-xl uppercase font-medium text-sm border border-solid">
+              class="bg-solid px-4 py-2 rounded-xl uppercase font-medium text-sm border border-solid hover:bg-accessible hover:text-backgroundColor hover:shadow-lg transition duration-200">
               En savoir plus
             </button>
           </div>
@@ -20,7 +20,7 @@
     <div id="modal" v-if="modalVisible"
       class="absolute z-50 flex flex-col h-5/6 w-5/6 bg-accessible items-center rounded-3xl text-backgroundColor shadow-modal">
       <span @click="closeModal"
-        class="absolute flex justify-center text-35xl w-10 top-4 right-4 cursor-pointer text-white text-3xl">&times;</span>
+        class="absolute flex justify-center w-10 top-4 right-4 cursor-pointer text-3xl">&times;</span>
       <figure class="w-full h-2/4 flex rounded-3xl">
         <img class="flex w-full rounded-t-3xl object-cover" :src="selectedProject.picture" alt="" />
       </figure>
@@ -43,7 +43,7 @@
 <style></style>
 
 <script>
-import gestinvest from '../../public/img/Gestinvest.png'
+import gestinvest from '../../assets/img/Gestinvest.png'
 export default {
   data() {
     return {

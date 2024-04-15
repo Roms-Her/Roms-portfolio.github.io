@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     width: 100%;
     background: var(--customs-background-gradient);
 
@@ -19,10 +19,6 @@ a {
     text-decoration: none;
 }
 
-/* canvas {
-    display: block;
-} */
-
 h1 {
     font-size: 3rem;
 }
@@ -37,10 +33,6 @@ p {
     font-size: 1rem;
 }
 
-/* a:hover {
-    box-shadow:var(--customs-shadow-box);
-    transition: .5s;
-} */
 .shadow {
     box-shadow:var(--customs-shadow-box);
 }
@@ -51,8 +43,8 @@ p {
 
 .black-arrow {
     width: 1.5em;
-    animation: arrowMouv 2.5s infinite; /* Répète l'animation indéfiniment */
-    transition: transform 1.5s; /* Transition de 1.5s pour un mouvement fluide */
+    animation: arrowMouv 2.5s infinite; 
+    transition: transform 1.5s;
     cursor: pointer;
 }
 
@@ -77,9 +69,9 @@ p {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-1.5rem); /* Déplace la flèche vers le bas */
+        transform: translateY(-1.5rem);
     }
     100% {
         transform: translateY(0);
     } 
-}
+} */

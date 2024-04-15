@@ -1,25 +1,25 @@
 <template>
   <section
     id="skills"
-    class="flex flex-col p-8 mb-10 sm:items-center md:mb-24"
+    class="flex flex-col p-8 mb-10 sm:items-center md:mb-24 text-accessible"
   >
     <div
       v-motion-slide-visible-once-left
       class="card-content flex flex-col w-full rounded-3xl p-4 items-center sm:w-5/6 md:p-8 xl:w-3/4 2xl:w-3/5 mb-10"
     >
-      <h2 class="font-bold mb-6 uppercase text-accessible text-2xl">
+      <h2 class="font-bold mb-6 uppercase text-2xl">
         Hards Skills
       </h2>
       <div class="flex mb-4 w-full justify-center">
         <ul
-          class="flex gap-4 md:gap-8 max-w-full flex-wrap justify-center items-center w-full md:gap-8 lg:w-4/5"
+          class="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-8 lg:w-4/5"
         >
           <li
             v-for="(item, index) in hardSkills"
             :key="index"
             class="uppercase font-semibold md:text-base"
           >
-            <div class="rigolo w-20 h-20 p-4 card-content rounded-3xl">
+            <div class="w-20 h-20 p-4 card-content rounded-3xl hover:rotate-180 duration-500 ease-in-out">
               <a :href="item.doc" target="_blank">
                 <img class="w-full" :src="item.logo" :alt="item.alt" />
               </a>
@@ -33,13 +33,13 @@
       v-motion-slide-visible-once-right
       class="card-content flex flex-col w-full rounded-3xl p-4 items-center sm:w-5/6 md:p-8 xl:w-3/4 2xl:w-3/5"
     >
-      <h2 class="font-bold mb-6 uppercase text-accessible text-2xl">
+      <h2 class="font-bold mb-6 uppercase text-2xl">
         Softs Skills
       </h2>
 
       <div class="flex mb-4 w-full justify-center">
         <ul
-          class="flex gap-4 md:gap-8 max-w-full flex-wrap justify-center items-center w-full md:gap-10 lg:w-4/5"
+          class="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-10 lg:w-4/5"
         >
           <li
             v-for="(item, index) in softSkills"
@@ -49,7 +49,7 @@
             <figure class="flex flex-col items-center justify-center gap-4">
               <a :href="item.doc" target="_blank">
                 <img
-                  class="rigolo w-20 h-20 p-4 card-content rounded-3xl"
+                  class="w-20 h-20 p-4 card-content rounded-3xl hover:rotate-180 duration-500 ease-in-out"
                   :src="item.logo"
                   :alt="item.alt"
                 />
@@ -63,35 +63,25 @@
   </section>
 </template>
 
-<style>
-.rigolo {
-  transition: 1.2s;
-}
-
-.rigolo:hover {
-  rotate: 360deg;
-}
-</style>
-
 <script>
-import logoCss from "../../public/img/css-3.png";
-import logoExpressJs from "../../public/img/express-js.png";
-import logoHtml from "../../public/img/html-5.png";
-import logoJavascript from "../../public/img/javascript.png";
-import logoNodeJs from "../../public/img/node-js.png";
-import logoPostgresql from "../../public/img/postgresql.png";
-import logoTailwinsCss from "../../public/img/tailwind-css.png";
-import logoVueJs from "../../public/img/vue-js.png";
-import logoSequelize from "../../public/img/sequelize.svg";
-import logoSqitch from "../../public/img/sqitch.svg";
-import logoGit from "../../public/img/git.png";
-import logoGithub from "../../public/img/github.png";
+import logoCss from "../../assets/img/css-3.png";
+import logoExpressJs from "../../assets/img/express-js.png";
+import logoHtml from "../../assets/img/html-5.png";
+import logoJavascript from "../../assets/img/javascript.png";
+import logoNodeJs from "../../assets/img/node-js.png";
+import logoPostgresql from "../../assets/img/postgresql.png";
+import logoTailwinsCss from "../../assets/img/tailwind-css.png";
+import logoVueJs from "../../assets/img/vue-js.png";
+import logoSequelize from "../../assets/img/sequelize.svg";
+import logoSqitch from "../../assets/img/sqitch.svg";
+import logoGit from "../../assets/img/git.png";
+import logoGithub from "../../assets/img/github.png";
 
-import logoCreatif from "../../public/img/creatif.png";
-import logoCurieux from "../../public/img/curieux.png";
-import logoCoworking from "../../public/img/travail-equipe.png";
-import logoPassionne from "../../public/img/passionne.png";
-import logoCofee from "../../public/img/cofee.png";
+import logoCreatif from "../../assets/img/creatif.png";
+import logoCurieux from "../../assets/img/curieux.png";
+import logoCoworking from "../../assets/img/travail-equipe.png";
+import logoPassionne from "../../assets/img/passionne.png";
+import logoCofee from "../../assets/img/cofee.png";
 
 export default {
   data() {

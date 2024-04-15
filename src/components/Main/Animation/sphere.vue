@@ -20,8 +20,7 @@
   opacity: 0.1;
   border-radius: 50%;
   position: absolute;
-  transition: all 10s ease; /* Ajout de la transition */
-  /* box-shadow: 0px 0px 2px 2px rgba(243, 244, 255, 0.73); */
+  transition: all 10s ease;
 }
 </style>
 

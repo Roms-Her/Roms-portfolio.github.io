@@ -27,15 +27,11 @@
 
 </template>
 
-<style>
-  
-</style>
-
 <script>
-import twitterSvg from '../components/icons/twitter.svg'
-import githubSvg from '../components/icons/github.svg'
-import linkedinSvg from '../components/icons/linkedin.svg'
-import mailSvg from '../components/icons/mail.svg'
+import twitterSvg from '../../assets/icons/twitter.svg'
+import githubSvg from '../../assets/icons/github.svg'
+import linkedinSvg from '../../assets/icons/linkedin.svg'
+import mailSvg from '../../assets/icons/mail.svg'
 
 export default {
   data() {
