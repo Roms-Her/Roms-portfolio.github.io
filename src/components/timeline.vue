@@ -31,7 +31,7 @@
           </div>
           <p class="md:text-base2 hidden sm:flex">
             Golden Square est une entreprise individuelle ainsi qu'une marque de
-            vêtements artisanale est responsable. Cette expérience m'a permis de
+            vêtements artisanale et responsable. Cette expérience m'a permis de
             développer mes compétences en gestion de projet, en communication,
             en marketing ainsi que des compétences technique tel que les outils
             de DAO (Dessin assistés par ordinateur). J'ai également acquis une

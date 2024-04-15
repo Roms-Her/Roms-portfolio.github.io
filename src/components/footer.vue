@@ -1,14 +1,14 @@
 <template>
 
   <section class="footer relative footer-center w-full m-auto p-10 text-accessible gap-4">
-    <div>
+    <div class="flex flex-col gap-4">
 
       <aside>
-        <h3 class="font-bold mb-4 md:text-35xl">Merci pour votre temps.</h3>
-        <p class="font-bold">
+        <h3 class="font-bold text-2xl mb-4 md:text-35xl">Merci pour votre temps.</h3>
+        <p class="font-bold text-base">
           Conçu et créé par Romain Hernandez.
         </p>
-        <p>Copyright © 2024 - Romain Hernandez</p>
+        <p class="text-base">Copyright © 2024 - Romain Hernandez</p>
       </aside>
       <nav>
         <div class="grid grid-flow-col">
