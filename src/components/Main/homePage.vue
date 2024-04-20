@@ -2,7 +2,7 @@
     <section class="flex flex-col sm:items-center text-accessible">
 
         <div v-motion-slide-visible-once-left class="flex p-8 flex-col w-full sm:w-5/6  md:mb-10 lg:flex-row-reverse lg:mb-14 xl:w-3/4 2xl:w-3/5">
-            <div class="portrait flex w-40 h-40 bg-card bg-opacity-30 rounded-full justify-center mb-8 m-auto md:mb-12 lg:m-auto lg:w-60 lg:h-60 xl:w-64 xl:h-64 ">
+            <div class="portrait flex w-40 h-40 bg-card bg-opacity-30  rounded-full justify-center mb-8 m-auto md:mb-12 lg:m-auto lg:w-60 lg:h-60 xl:w-64 xl:h-64 ">
             </div>
             <div class="md:pr-8">
 
@@ -43,7 +43,7 @@
 .portrait{
     background-image: url('../../assets/img/roms.png');
     background-size: cover;
-    border: 1px solid var(--customs-accessible-text);
+    border: 1px solid;
     box-shadow: var(--customs-shadow-box);
     backdrop-filter: blur(30px);
 }</style>
