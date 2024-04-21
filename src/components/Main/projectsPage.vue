@@ -17,18 +17,21 @@
       </div>
     </div>
 
-    <div id="modal" v-if="modalVisible"
+   <div id="modal" v-if="modalVisible"
       class="absolute z-50 flex flex-col h-5/6 w-5/6 bg-accessible items-center rounded-3xl text-backgroundColor shadow-modal">
       <span @click="closeModal"
         class="absolute flex justify-center w-10 top-4 right-4 cursor-pointer text-3xl text-accessible">&times;</span>
-      <figure class="w-full h-2/4 flex rounded-3xl">
+      <figure class="relative w-full h-2/4 flex rounded-3xl">
         <img class="flex w-full rounded-t-3xl object-cover" :src="selectedProject.picture" alt="" />
       </figure>
-      <div class="flex flex-col items-center p-8 overflow-y-auto h-full justify-center">
-        <div class="flex flex-col sm:w-3/4">
+      <div class="flex flex-col items-center p-8 overflow-y-auto h-full">
+        <div class="flex flex-col gap-4  sm:w-3/4 ">
           <h3 class="text-center mb-4 font-bold">{{ selectedProject.name }}</h3>
-          <p class="text-center mb-4">
+          <p class="text-center">
             {{ selectedProject.text }}
+          </p>
+          <p class="text-center mb-4">
+            {{ selectedProject.texte2 }}
           </p>
         </div>
         <div class="flex flex-col items-center justify-center">
@@ -37,14 +40,14 @@
           <a :href="selectedProject.link" class="text-sm uppercase font-bold text-solid" target="_blank" >Cliquez ici pour visiter le site web !</a>
         </div>
       </div>
-    </div>
+</div>
   </section>
 </template>
 
 <style></style>
 
 <script>
-import gestinvest from '../../assets/img/Gestinvest.png';
+import gestinvest from '../../assets/img/assetDetail.png';
 export default {
   data() {
     return {
@@ -58,7 +61,8 @@ export default {
           picture:
             gestinvest,
           technos: "React, Node JS, Express, Sqitch, Tailwildcss, Jest, PostgreSQL, Heroku",
-          text: "Gestinvest est une application de gestion de portefeuille d'actifs. Elle permet de suivre l'évolution de ses investissements en temps réel. J'ai travaillé sur ce projet en tant que Product Owner. J'ai pu mettre en pratique mes compétences en développement web et en gestion de projet. Créé pour un projet d'étude, nous étions 5 (2  front, 3 back) et avions un mois composé de 4 sprints en comptant le sprint 0 pour le réaliser.",
+          text: "Gestinvest est une application de gestion de portefeuille d'actifs. Elle permet de suivre l'évolution de ses investissements en temps réel. J'ai travaillé sur ce projet en tant que Product Owner. Créé pour un projet d'étude, nous étions 5 développeurs (2 front, 3 back) et avions un mois composé de 4 sprints, en comptant le sprint 0, pour le réaliser. J'ai essentiellement développé la partie back-end de l'application en Node.js et Express (API REST) qui permet de communiquer entre le front et le back.",
+          texte2: "La sécurité est un point important de notre application, c'est pourquoi nous avons choisi de mettre l'accent sur celle-ci. Nous avons développé des algorithmes de calcul de performance pour les actifs financiers détenus par les utilisateurs. Les données des actifs sont mises à jour automatiquement via un CRON que nous avons mis en place, lequel fait appel à différentes API externes pour insérer le prix des actifs à certains moments de la journée. Aujourd'hui, nous continuons d'améliorer le contenu de Gestinvest et de le maintenir en ligne par passion pour ce projet.",
           poste: "Product Owner",
           link: "https://gestinvest-front-8af1ad4ce95a.herokuapp.com/",
         },
