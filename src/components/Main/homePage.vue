@@ -1,8 +1,8 @@
 <template>
-    <section class="flex flex-col sm:items-center ">
+    <section class="flex flex-col sm:items-center text-accessible">
 
         <div v-motion-slide-visible-once-left class="flex p-8 flex-col w-full sm:w-5/6  md:mb-10 lg:flex-row-reverse lg:mb-14 xl:w-3/4 2xl:w-3/5">
-            <div class="portrait shadow flex w-40 h-40 bg-card bg-opacity-30 rounded-full justify-center mb-8 m-auto md:mb-12 lg:m-auto lg:w-60 lg:h-60 xl:w-64 xl:h-64 ">
+            <div class="portrait flex w-40 h-40 bg-card bg-opacity-30  rounded-full justify-center mb-8 m-auto md:mb-12 lg:m-auto lg:w-60 lg:h-60 xl:w-64 xl:h-64 ">
             </div>
             <div class="md:pr-8">
 
@@ -11,9 +11,9 @@
                 <p class="mb-6 text-base2 md:mb-8">Développeur full stack. Créatif et passionné.</p>
                 <ul class="flex gap-2 flex-wrap md:gap-4 xl:gap-4">
 
-                    <li v-for="(item, index) in homeLinks" :key="index" class="flex items-center justify-center">
+                    <li v-for="(item, index) in homeLinks" :key="index" class="flex items-center justify-center  ">
                         <a :href="generateLink(item)"
-                            class="social-a px-6 py-3 rounded-xl uppercase border border-solid tracking-widest font-medium text-sm"
+                            class=" bg-solid px-6 py-3 rounded-xl uppercase border border-solid tracking-widest font-medium text-sm hover:bg-accessible hover:text-backgroundColor hover:shadow-xl transition-all ease-out duration-200"
                             target="blank">{{ item }}</a>
                     </li>
 
@@ -39,6 +39,14 @@
     </section>
 </template>
 
+<style>
+.portrait{
+    background-image: url('../../assets/img/roms.png');
+    background-size: cover;
+    border: 1px solid;
+    box-shadow: var(--customs-shadow-box);
+    backdrop-filter: blur(30px);
+}</style>
 
 <script>
 export default {

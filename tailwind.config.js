@@ -5,12 +5,9 @@ export default {
     extend: {
       colors:{
         backgroundColor: '#141726',
-        components: "#253974",
-        separator: "#3A4F97",
         solid: "#0090FF",
         accessible: "#f1f4fd",
-        backgroundInfo: "#6c22c3b3",
-        buttonColor: "#0090ff"
+        backgroundInfo: "#6c22c3b3"
       },
 
       fontSize: {

@@ -1,8 +1,8 @@
 <template>
   <section id="timeline"
-    class="relative flex flex-col items-center justify-center w-full px-8 pb-24"
+    class="relative flex flex-col items-center justify-center w-full px-8 pb-24 text-accessible"
   >
-    <!-- <h2 class="text-3xl text-center w-3/4 mb-10 sm:w-2/5 md:text-3xl uppercase font-semibold">Expériences professionnelles</h2> -->
+
     <ul
       class="timeline timeline-snap-icon max-md:timeline-compact w-full timeline-vertical sm:w-5/6 md:w-3/4 2xl:w-3/5"
     >
@@ -44,10 +44,10 @@
             fournisseurs.
           </p>
         </div>
-        <hr class="bg-white" />
+        <hr class="bg-accessible" />
       </li>
       <li>
-        <hr class="bg-white" />
+        <hr class="bg-accessible" />
         <div class="timeline-middle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,10 +76,10 @@
             Travaille en équipe et en autonomie.
           </p>
         </div>
-        <hr class="bg-white" />
+        <hr class="bg-accessible" />
       </li>
       <li>
-        <hr class="bg-white" />
+        <hr class="bg-accessible" />
         <div class="timeline-middle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +113,7 @@
             compétences en développement web.
           </p>
         </div>
-        <hr class="bg-white" />
+        <hr class="bg-accessible" />
       </li>
     </ul>
   </section>
