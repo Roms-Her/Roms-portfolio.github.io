@@ -55,13 +55,13 @@ export default {
             homeLinks: [
                 "github",
                 "linkedin",
-                "twitter",
+                "x",
                 "email"
             ],
             socialLinks: {
                 github: 'https://github.com/Roms-Her',
                 linkedin: 'https://www.linkedin.com/in/romain-hernandez-romsher',
-                twitter: 'https://twitter.com/dev_roms',
+                x: 'https://twitter.com/dev_roms',
                 email: 'mailto:romsher.dev@gmail.com'
             }
         };

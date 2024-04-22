@@ -28,10 +28,10 @@
 </template>
 
 <script>
-import twitterSvg from '../../assets/icons/twitter.svg'
 import githubSvg from '../../assets/icons/github.svg'
 import linkedinSvg from '../../assets/icons/linkedin.svg'
 import mailSvg from '../../assets/icons/mail.svg'
+import xSvg from '../../assets/icons/x.svg'
 
 export default {
   data() {
@@ -43,8 +43,8 @@ export default {
           link: "https://www.linkedin.com/in/romain-hernandez-romsher"
         },
         {
-          name: "Twitter X",
-          icon: twitterSvg,
+          name: "X",
+          icon: xSvg,
           link: "https://twitter.com/dev_roms"
         },
         {

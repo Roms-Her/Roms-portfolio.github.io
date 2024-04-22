@@ -109,7 +109,7 @@
           </p>
           <p class="md:text-base2 sm:hidden">
             Projet d'étude. Application web de
-            gestion de portefeuille d'actif. Mise en pratique mes
+            gestion de portefeuille d'actif. Mise en pratique de mes
             compétences en développement web.
           </p>
         </div>

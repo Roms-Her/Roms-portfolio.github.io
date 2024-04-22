@@ -20,7 +20,7 @@
    <div id="modal" v-if="modalVisible"
       class="absolute z-50 flex flex-col h-5/6 w-5/6 bg-accessible items-center rounded-3xl text-backgroundColor shadow-modal">
       <span @click="closeModal"
-        class="absolute flex justify-center w-10 top-4 right-4 cursor-pointer text-3xl text-accessible">&times;</span>
+        class="absolute z-50 flex justify-center w-10 top-4 right-4 cursor-pointer text-35xl text-accessible">&times;</span>
       <figure class="relative w-full h-2/4 flex rounded-3xl">
         <img class="flex w-full rounded-t-3xl object-cover" :src="selectedProject.picture" alt="" />
       </figure>
