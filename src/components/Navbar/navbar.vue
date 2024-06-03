@@ -2,7 +2,7 @@
   <nav
     class="navbar flex justify-between p-6 items-center w-full h-full mb-8 sm:w-5/6 sm:pt-10 xl:w-3/4 2xl:w-3/5 xl:mb-20 z-20"
   >
-    <a href="" class="logo-a logo"
+    <a href="/" class="logo-a logo"
       ><svg
         xmlns="http://www.w3.org/2000/svg"
         width="110"
