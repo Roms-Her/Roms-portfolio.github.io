@@ -48,6 +48,7 @@
 
 <script>
 import gestinvest from '../../assets/img/gestinvest-logo.png';
+import portfolio from '../../assets/img/ROMS-Portfolio.png';
 export default {
   data() {
     return {
@@ -66,6 +67,16 @@ export default {
           texte2: "La sécurité est un point important de notre application, c'est pourquoi nous avons choisi de mettre l'accent sur celle-ci. Nous avons développé des algorithmes de calcul de performance pour les actifs financiers détenus par les utilisateurs. Les données des actifs sont mises à jour automatiquement via un CRON que nous avons mis en place, lequel fait appel à différentes API externes pour insérer le prix des actifs à certains moments de la journée. Aujourd'hui, nous continuons d'améliorer le contenu de Gestinvest et de le maintenir en ligne par passion pour ce projet.",
           poste: "Product Owner",
           link: "https://gestinvest-front-8af1ad4ce95a.herokuapp.com/",
+        },  {
+          name: "Roms - Portfolio",
+          picture:
+            portfolio,
+          alt: 'Image du portfolio de Roms',
+          technos: "Vue.js, Tailwildcss, HTML, Vite, Vercel",
+          text: "Ce portfolio créer par mes soin retrace mon parcours de développeur, mes projet ainsi que quelques élément de ma vie professionnel avant ma reconversion professionnel.",
+          texte2: "Ce site vitrine est réalisé avec Vue.js et TailwindCSS. Il est hébergé sur Vercel. J'ai utilisé Vite pour la compilation du projet. J'ai également ajouté des animations pour rendre le site plus dynamique et mis en place un système de modales pour afficher les détails de mes projets.",
+          poste: "Multi tâche",
+          link: "https://romain-hernandez.com/",
         },
        
       ],
