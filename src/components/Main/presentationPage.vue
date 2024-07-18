@@ -66,22 +66,24 @@
 <script>
 import logoCss from "../../assets/img/css-3.png";
 import logoExpressJs from "../../assets/img/express-js.png";
-import logoHtml from "../../assets/img/html-5.png";
-import logoJavascript from "../../assets/img/javascript.png";
-import logoNodeJs from "../../assets/img/node-js.png";
-import logoPostgresql from "../../assets/img/postgresql.png";
-import logoTailwinsCss from "../../assets/img/tailwind-css.png";
-import logoVueJs from "../../assets/img/vue-js.png";
-import logoSequelize from "../../assets/img/sequelize.svg";
-import logoSqitch from "../../assets/img/sqitch.svg";
 import logoGit from "../../assets/img/git.png";
 import logoGithub from "../../assets/img/github.png";
+import logoHtml from "../../assets/img/html-5.png";
+import logoJavascript from "../../assets/img/javascript.png";
+import logoNextJs from "../../assets/img/next-js.svg";
+import logoNodeJs from "../../assets/img/node-js.png";
+import logoPostgresql from "../../assets/img/postgresql.png";
+import logoReact from "../../assets/img/react.svg";
+import logoSequelize from "../../assets/img/sequelize.svg";
+import logoSqitch from "../../assets/img/sqitch.svg";
+import logoTailwinsCss from "../../assets/img/tailwind-css.png";
+import logoVueJs from "../../assets/img/vue-js.png";
 
+import logoCofee from "../../assets/img/cofee.png";
 import logoCreatif from "../../assets/img/creatif.png";
 import logoCurieux from "../../assets/img/curieux.png";
-import logoCoworking from "../../assets/img/travail-equipe.png";
 import logoPassionne from "../../assets/img/passionne.png";
-import logoCofee from "../../assets/img/cofee.png";
+import logoCoworking from "../../assets/img/travail-equipe.png";
 
 export default {
   data() {
@@ -98,20 +100,22 @@ export default {
           doc: "https://developer.mozilla.org/fr/docs/Web/CSS",
         },
         {
+          logo: logoNodeJs,
+          alt: "logo Node.JS",
+          doc: "https://nodejs.org/en/about",
+        },
+        {
           logo: logoJavascript,
           alt: "logo Javascript",
           doc: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
         },
-        { logo: logoVueJs, alt: "Logo Vue JS", doc: "https://vuejs.org/" },
+        { logo: logoVueJs, alt: "Logo Vue.JS", doc: "https://vuejs.org/" },
+        { logo: logoReact, alt: "Logo React", doc: "https://fr.react.dev/reference/react" },
+        { logo: logoNextJs, alt: "Logo Next.JS", doc: "https://nextjs.org/" },
         {
           logo: logoTailwinsCss,
           alt: "logo Tailwind CSS",
           doc: "https://tailwindcss.com/",
-        },
-        {
-          logo: logoNodeJs,
-          alt: "logo Node JS",
-          doc: "https://nodejs.org/en/about",
         },
         {
           logo: logoExpressJs,
