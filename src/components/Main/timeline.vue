@@ -99,7 +99,7 @@
           class="timeline-start mb-10 text-end"
         >
           <time class="font-mono italic">2024</time>
-          <div class="font-bold md:text-xl">Gestinvest - Product owner</div>
+          <div class="font-bold md:text-xl">Gestinvest - Product owner/Développeur web</div>
           <p class="md:text-base2 hidden sm:flex">
             Gestinvest est un projet d'étude. Il s'agit d'une application web de
             gestion de portefeuille d'actif. Cette application permet de suivre
